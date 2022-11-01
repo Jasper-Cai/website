@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Team</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"crossorigin="anonymous"/>
+    <style>
+      section{margin:50px 0;}
+      .email{color:#f00}
+      /*Heading*/
+        .header{position:fixed;top:0px;left:0px;width:100%;min-height:50px;background-color:#000;opacity:0.7;padding:20px;}
+        .bottom-header{position:fixed;top:0px;left:0px;width:100%;min-height:50px;margin-top:70px;}
+        .btn-group{margin: auto;}
+      /*Section one*/
+        .first-heading{position:relative;top:60%;margin:0 5%;color:#FFF}
+        .bg-img{width: 100%;height: 300px;background-image: url('https://adventure.com/wp-content/uploads/2022/07/Hero-Inside-South-Americas-icy-new-National-Park-Photo-credit-Pilar-Valenzuela-Delpiano-12-scaled.jpg');background-size: cover;background-position: center center;}
+      /*Section two*/
+        .column h4{padding: 5px 0 5px 0;}
+        .column div{padding:8px;line-height:30px;}
+        .manager-detail{display:flex;width:100%;}
+        .manager-detail>div{flex:1;padding:10px}
+        @media screen and (max-width: 1000px) {.column {flex: 100%;max-width: 100%;}.manager-detail{flex-direction:
+        column;}    }
+        @media screen and (max-width: 600px)  {.column {flex: 100%;max-width: 100%;}.manager-detail>div{width:100%}   }
+        .manager-infor{padding:0 5px}
+        .manager-infor>h5{color:#f00;margin-bottom: 60px;}
+      /*Section Three*/
+        .column h4{padding: 5px 0 5px 0;}
+        .column div{padding:8px;line-height:30px;}
+        .sales-detail{display:flex;width:100%;}
+        .sales-detail>div{flex:1;padding:10px}
+        @media screen and (max-width: 1000px) {.column {flex: 100%;max-width: 100%;}.sales-detail{flex-direction:     column;}    }
+        @media screen and (max-width: 600px) {.column {flex: 100%;max-width: 100%;}.sales-detail>div{width:100%}   }
+        .sales-infor{padding:0 5px;float:left;width:300px;margin:0 20px 0 20px;}
+        .sales-infor>h5{color:#f00;margin-bottom: 60px;}
+      /*Section Four*/
+        .inventory{padding:8px;}
+        .inventory-col{padding: 4px;}
+        .btn-inventory-container{display: flex;flex-direction: row;}
+        .btn-search-inventory{margin-left: auto;margin-right:5px;}
+      /*Section Five*/
+        .map{overflow:hidden;padding-bottom:50%;position:relative;height:0;}
+        .map iframe{top:20px;height:100%;width:100%;position:absolute;}
+      /*Section Six*/
+        .footer{color:#fff;padding:20px 2%;background-color:#333;opacity: 0.9;}
+        .footer h4{margin: 10px 20px;}
+        .footer a{color:#999;text-decoration:none;}
+        .footer>div{margin:20px 0;}
+        .considerations li{padding:8px;line-height: 30px;}
+        .twitterfeed{padding:8px;line-height: 30px;}
+        .tweet-text>li{margin:20px 0}
+      /*Section Seven*/
+        .menu-item{display:inline-block;;padding: 8px}
+    </style>
+  </head>
+  <body>
+
+    <div>
+      <header class="header">
+      <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+        <div class="btn-group mr-2 btn-group-sm" role="group" aria-label="First group">
+          <button type="button" class="btn btn-outline-secondary">LOGIN</button>
+          <button type="button" class="btn btn-outline-secondary">CART</button>
+          <button type="button" class="btn btn-outline-secondary">LANGUAGE</button>
+          <button type="button" class="btn btn-outline-secondary">Search</button>
+        </div>
+        <div class="btn-group mr-2 btn-group-sm" role="group" aria-label="Second group">
+          <button type="button" class="btn btn-outline-secondary">1-800-567-0123</button>
+          <button type="button" class="btn btn-outline-secondary">107 SUNSET BLVD., BEVERLY HILLS, CA 90210</button>
+        </div>
+      </div>
+      </header>
+
+      <div class="bottom-header">
+        <nav class="navbar navbar-expand-lg navbar-dark" style="background: rgba(0,0,0,0.5);">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbar Nav" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="navbar-logo"style="margin-left:3%;">
+            <a class="navbar-brand" style="display: block;"><span><em><strong>Automotive</strong></em></span></a><span style="color:#FFF">Template</span>
+          </div>
+          <div class="navbar-navigation collapse navbar-collapse justify-content-center" style="margin-left:10%;">
+            <div class="col-md-6 col-sm-6 col-12">
+              <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link">HOME<a></li>
+                <li class="nav-item"><a class="nav-link">PAGES</a></li>
+                <li class="nav-item"><a class="nav-link">INVENTORY</a></li>
+                <li class="nav-item"><a class="nav-link">SERVICE</a></li>
+                <li class="nav-item"><a class="nav-link">PORTFOLIO</a></li>
+                <li class="nav-item"><a class="nav-link">SHOP</a></li>
+                <li class="nav-item"><a class="nav-link">CONTACT</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav> 
+      </div>
+    </div>
+
+    <section style="margin:70px auto">
+      <div class="bg-img">
+          <div class="first-heading">
+            <h2>Our Team</h2>
+            <h4 style="display:inline-block">Customer service is not a department, it</h4>
+            <span style="float:right;">Home / Our Team</span>
+          </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container-fluid" style="padding:0 5%">
+        <div class="manager-infor">
+          <h5><strong>MEET THE MANAGEMENT</strong></h5>
+        </div>
+        <div class="manager-detail">
+          <div class="manager-infor">
+            <div class="column">
+              <img src="https://demo.themesuite.com/automotive-wp/wp-content/uploads/2014/09/team11.jpg" alt="William Dean" width="300" height="200"> 
+              <div>
+               <h4><strong>William Dean</strong></h4>
+                <p>Chief Executive Officer / CEO</p>
+              </div>
+              <hr>
+              <div>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor aenean massa. Cum sociis numquasa mode tempora posuere feugiat.</p>
+                <ul>
+                  <li><span>1-800-123-4567 - Extension 114</span></li>
+                  <li><span>1-902-361-7714</span></li>
+                  <li><a class="email" href="">william@automotivetemplate.com</a></li>
+                </ul>
+              </div>
+              <hr>
+              <div>
+                <img src="icon.jpg" width="250px">
+              </div>
+            </div>
+          </div>
+          
+          <div class="manager-infor">
+            <div class="column">
+              <img src="https://demo.themesuite.com/automotive-wp/wp-content/uploads/2014/09/team21.jpg" alt="William Dean" width="300" height="200"> 
+              <div>
+                <h4><strong>Leah Jennings</strong></h4>
+                <p>Chief Financial Officer / CEO / CFO</p>
+              </div>
+              <hr>
+              <div>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor aenean massa. Cum sociis numquasa mode tempora posuere feugiat.</p>
+                <ul>
+                  <li><span>1-800-123-4567 - Extension 107</span></li>
+                  <li><span>1-902-342-0864</span></li>
+                  <li><a class="email" href="">leah@automotivetemplate.com</a></li>
+                </ul>
+              </div>
+              <hr>
+              <div>
+                <img src="icon.jpg" width="250px">
+              </div>
+            </div>
+          </div>
+
+          <div class="manager-infor">
+            <div class="column">
+              <img src="https://demo.themesuite.com/automotive-wp/wp-content/uploads/2014/09/team31.jpg" alt="William Dean" width="300" height="200"> 
+              <div>
+                <h4><strong>Zachary Hale</strong></h4>
+                <p>Lead Sales Manager</p>
+              </div>
+              <hr>
+              <div>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor aenean massa. Cum sociis numquasa mode tempora posuere feugiat.</p>
+                <ul>
+                  <li><span>1-800-123-4567 - Extension 119</span></li>
+                  <li><span>1-902-832-3702</span></li>
+                  <li><a class="email" href="">zachary@automotivetemplate.com</a></li>
+                </ul>
+              </div>
+              <hr>
+              <div>
+                <img src="icon.jpg" width="250px">
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container" style="padding:0 5%;width:100%;">
+        <div>
+          <h5><strong>MEET OUR SALES TEAM</strong></h5>
+        </div>
+        <div class="sales-detail" style="display:block;overflow:auto;">
+          <div class="sales-infor">
+            <div class="column">
+              <img src="https://demo.themesuite.com/automotive-wp/wp-content/uploads/2014/09/team4-lrg1.jpg" alt="William Dean" width="300" height="200"> 
+              <div>
+               <h4><strong>Luca Sanderson</strong></h4>
+                <p>Sales Representative</p>
+              </div>
+              <hr>
+              <div>
+                <p>Lorem ipsum dolor sit amet, paleotousia consectetuer adipiscing elit. Aenean com.</p>
+                <ul>
+                  <li><span>1-800-123-4567 - Extension 105</span></li>
+                  <li><span>1-902-544-4415</span></li>
+                  <li class="email"><a href="">luca@automotivetemplate.com</a></li>
+                </ul>
+              </div>
+              <hr>
+              <div>
+                <img src="icon.jpg" width="250px">
+              </div>
+            </div>
+          </div>
+          
+          <div class="sales-infor">
+            <div class="column">
+              <img src="https://demo.themesuite.com/automotive-wp/wp-content/uploads/2014/09/team5-lrg1.jpg" alt="William Dean" width="300" height="200"> 
+              <div>
+                <h4><strong>Abby Myers</strong></h4>
+                <p>Sales Representative</p>
+              </div>
+              <hr>
+              <div>
+                <p>Lorem ipsum dolor sit amet, paleotousia consectetuer adipiscing elit. Aenean com.</p>
+                <ul>
+                  <li><span>1-800-123-4567 - Extension 123</span></li>
+                  <li><span>1-902-361-7267</span></li>
+                  <li class="email"><a href="">abby@automotivetemplate.com</a></li>
+                </ul>
+              </div>
+              <hr>
+              <div>
+                <img src="icon.jpg" width="250px">
+              </div>
+            </div>
+          </div>
+
+          <div class="sales-infor">
+            <div class="column">
+              <img src="https://demo.themesuite.com/automotive-wp/wp-content/uploads/2014/09/team5-lrg1.jpg" alt="William Dean" width="300" height="200"> 
+              <div>
+                <h4><strong>Abby Myers</strong></h4>
+                <p>Sales Representative</p>
+              </div>
+              <hr>
+              <div>
+                <p>Lorem ipsum dolor sit amet, paleotousia consectetuer adipiscing elit. Aenean com.</p>
+                <ul>
+                  <li><span>1-800-123-4567 - Extension 123</span></li>
+                  <li><span>1-902-361-7267</span></li>
+                  <li class="email"><a href="">abby@automotivetemplate.com</a></li>
+                </ul>
+              </div>
+              <hr>
+              <div>
+                <img src="icon.jpg" width="250px">
+              </div>
+            </div>
+          </div>
+
+          <div class="sales-infor">
+            <div class="column">
+              <img src="https://demo.themesuite.com/automotive-wp/wp-content/uploads/2014/09/team6-lrg1.jpg" alt="William Dean" width="300" height="200"> 
+              <div>
+                <h4><strong>Connor Wyatt</strong></h4>
+                <p>Sales Representative</p>
+              </div>
+              <hr>
+              <div>
+                <p>Lorem ipsum dolor sit amet, paleotousia consectetuer adipiscing elit. Aenean com.</p>
+                <ul>
+                  <li><span>1-800-123-4567 - Extension 111</span></li>
+                  <li><span>1-902-544-4415</span></li>
+                  <li class="email"><a href="">connor@automotivetemplate.com</a></li>
+                </ul>
+              </div>
+              <hr>
+              <div>
+                <img src="icon.jpg" width="250px">
+              </div>
+            </div>
+          </div>
+
+          <div class="sales-infor">
+            <div class="column">
+              <img src="https://demo.themesuite.com/automotive-wp/wp-content/uploads/2014/09/team7-lrg1.jpg" alt="William Dean" width="300" height="200"> 
+              <div>
+                <h4><strong>Sarah Thomas</strong></h4>
+                <p>Sales Representative</p>
+              </div>
+              <hr>
+              <div>
+                <p>Lorem ipsum dolor sit amet, paleotousia consectetuer adipiscing elit. Aenean com.</p>
+                <ul>
+                  <li><span>1-800-123-4567 - Extension 108</span></li>
+                  <li><span>1-902-544-4415</span></li>
+                  <li class="email"><a href="">sarah@automotivetemplate.com</a></li>
+                </ul>
+              </div>
+              <hr>
+              <div>
+                <img src="icon.jpg" width="250px">
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container-fluid" style="padding:0 5%">
+        <div class="col">
+          <div><h5><span style="color: #f00;"><strong>SEARCH</strong></span> OUR INVENTORY</h5>
+            <div style="background-color:#e0e0e0;padding:2%;">
+              <form>
+                <div>
+                  <div class="row inventory">
+                    <div class="form-group form-inline col-6">
+                      <div class="form-group col-auto inventory-col">
+                        <select class="form-select">
+                          <option selected>Make</option>
+                          <option>Audi</option>
+                          <option>BMW</option>
+                        </select>
+                      </div>
+
+                      <div class="form-group col-auto inventory-col">
+                        <select class="form-select">
+                          <option selected>Model</option>
+                          <option>RS7</option>
+                          <option>X6M</option>
+                        </select>
+                      </div>
+
+                      <div class="form-group col-auto inventory-col"><select class="form-select">
+                        <option selected>Body Style</option>
+                        <option>Sedan</option>
+                        <option>SUV</option>
+                        </select>
+                      </div>
+                    </div>
+
+                    <div class="form-group col-6">
+                      <div class="row inventory-col">
+                        <div class="form-group col-5">
+                          <select class="form-select">
+                            <option selected>Min Year</option>
+                            <option>2000</option>
+                            <option>2001</option>
+                          </select>
+                        </div>
+                        <div class="col-2" style="margin:auto"><span>to</span>
+                        </div>
+                        <div class="form-group col-5">
+                        <select class="form-select">
+                          <option selected>Max Year</option>
+                          <option>2020</option>
+                          <option>2021/option>
+                        </select>
+                        </div>
+                      </div>
+
+                      <div class="row inventory-col">
+                        <div class="form-group col-5">
+                          <select class="form-select">
+                            <option selected>Min Price</option>
+                            <option>50000</option>
+                            <option>100000</option>
+                          </select></div>  
+                        <div class="col-2"><span>to</span>
+                        </div>
+                        <div class="form-group col-5">
+                          <select class="form-select">
+                            <option selected>Max Price</option>
+                            <option>150000</option>
+                            <option>200000</option>
+                          </select>
+                        </div>
+                      </div>
+
+                      <div class="form-group col-auto inventory-col">
+                        <input class="form-control" type="text" placeholder="Refine with keywords">
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="inventory">
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="checkbox" value="option1"><label>Certified</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="checkbox" value="option2"><label>CARFAX Verfied</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input"  type="checkbox" value="option3"><label>Brand New</label>
+                    </div>
+                  </div>
+
+                  <div class="inventory btn-inventory-container">
+                    <button type="button" class="btn btn-danger btn-search-inventory">Reset</button>
+                    <button type="button" class="btn btn-danger">Find My New New Vehicle</button>
+                  </div>
+
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container-fluid">
+        <div class="map">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2887.269250541637!2d-79.38924548463395!3d43.64256617912161!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b34d68bf33a9b%3A0x15edd8c4de1c7581!2sCN%20Tower!5e0!3m2!1sen!2sca!4v1666724020281!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+      </div>
+    </section>
+
+    <section style="margin:0px;">
+      <div class="container-fluid">
+        <div class="row footer">
+          <div class="col-lg-6 col-md-6 col-sm-12">
+            <h4>Things to Consider</h4>
+            <div class="considerations">
+              <ul style="margin-top:35px;">
+                <li>Fully responsive and ready for all mobile devices</li>
+                <li>Integrated inventory management system</li>
+                <li>Simple option panel and very easy to customize</li>
+                <li>Search engine optimization (SEO) is 100% built-in</li>
+                <li>Revolution Slider is included for product marketing</li>
+                <li>Tons of shortcodes for quick and easy add-ons</li>
+                <li>Fully backed by our dedicated support team</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-lg-6 col-md-6 col-sm-12">
+            <h4>Twitter Feed</h4>
+            <div class="twitterfeed">
+              <ul class="tweet-text">
+                <li> 
+                  <span>Check out our latest theme release 'Landscaping' - 
+                    <a href="">themeforest.net/item/landscapi…</a>
+                  </span>
+                </li>
+                <li> 
+                  <span>
+                    <span>@</span>
+                    <a href="">MrSamHughes</a> 
+                    Probably the easiest way is to send an email to sales@themesuite.com, or through our ThemeForest profi… <a href="">twitter.com/i/web/status/8…</a>
+                  </span>
+                </li>
+                <li> 
+                  <span>
+                    Spring is coming!  Check out our new Landscaping HTML Template, WordPress to be released shortly! 
+                    <a href="">themeforest.net/item/landscapi…</a>
+                  </span>
+                </li>
+                <li> 
+                  <span>
+                    Congrats @
+                    <a href="">diadea3007</a> on being 2017 @
+                    <a href="">Envato</a> People to Watch, very well deserved indeed 
+                    <a href="">envato.com/blog/36-creati…</a>
+                  </span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section style="margin:0px;">
+      <div class="container-fluid" style="color:#fff">
+        <div class="row footer" style="background-color:#000;opacity:0.8;">
+          <div class="col-lg-4 col-md-4 col-sm-4 logo-footer">
+            <div>
+              <a href="">
+                <h2>Automotive</h2>
+                <span>Template</span>
+              </a>
+            </div>
+            <div >
+              <p> 
+                Powered by <a href="">WordPress</a>. 
+                Built with <a href="">Automotive</a>.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-8 col-md-8 col-sm-8">
+            <div class="col-lg-12" style="display:flex;margin:auto 5%;padding: 8px;">
+              <img src="icon.jpg" alt="bottom-icon" width="300px">
+            </div>
+            <div class="col-lg-12">
+              <ul>
+                <li class="menu-item"><a href="">Home</a></li>
+                <li class="menu-item"><a href="">Pages</a></li>
+                <li class="menu-item"><a href="">Inventory</a></li>
+                <li class="menu-item"><a href="">Services</a></li>
+                <li class="menu-item"><a href="">Our Team</a></li>
+                <li class="menu-item"><a href="">Blog</a></li>
+                <li class="menu-item"><a href="">Location</a></li>
+                <li class="menu-item"><a href="">Contact Us</a></li>
+              </ul>
+            </div>
+          </div>
+
+          
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
