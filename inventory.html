@@ -8,6 +8,7 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"crossorigin="anonymous"/>
   <style>
     section{margin:50px 0;}
+    
     /*Heading*/
       .header{position:fixed;top:0px;left:0px;width:100%;min-height:50px;background-color:#000;opacity:0.7;padding:20px;}
       .bottom-header{position:fixed;top:0px;left:0px;width:100%;min-height:50px;margin-top:70px;}
@@ -19,10 +20,10 @@
       .my-dropdown{display:inline-block;padding:5px;}
       .sort-by{text-align:center;line-height:50px;padding:5px;}
     /*Section Three*/
-      .inventory:{margin:10px;}
+      .inventory{margin:10px;padding:12px;}
       .margin-bottom-20{margin-bottom:20px;}
       .title{font-size:20px;}
-      .checkbox{display:flex;float:right}
+      .checkbox{position:absolute;top:3px;right:5px}
       .vehicle-detail{font-weight:bold;}
       .spec{padding-left:5px;}
       .btn-details{display:flex;float:right;}
@@ -79,7 +80,7 @@
       </div>
     </div>
 
-    <section style="margin:70px auto">
+    <section style="margin:70px 0">
       <div class="bg-img">
           <div class="first-heading">
             <h2>Boxed Fullwidth</h2>
@@ -90,7 +91,7 @@
     </section>
 
     <section>
-      <div class="container-fluid" style="padding:0 8%">
+      <div class="container-fluid" style="padding:0 8%;">
         <div style="margin-bottom:15px;">
           <div class="row" style="padding:5px;">
             <div class="col-lg-8 col-md-6 col-sm-6">
@@ -185,8 +186,8 @@
 
         <div style="margin-bottom:15px;">
           <div class="row">
-            <div class="col-lg-4 col-md-4 col-sm-12 sort-by" >
-              <span>Sort By:</span>
+            <div class="col-lg-4 col-md-4 col-sm-12 " >
+              <span style="padding-left:5px;">Sort By:</span>
               <div class="my-dropdown">
                 <select class="form-select">
                   <option>Year Ascending</option>
@@ -219,59 +220,13 @@
     </section>
 
     <section>
-      <div class="container-fluid">
-        <div class="row" style="padding:">
+      <div class="container-fluid" style="padding:0 8%;">
+        <div class="row">
               <div class="inventory col-xl-3 col-lg-4 col-md-6 col-sm-12 col-xs-12 border border-secondary rounded-3"
-              style="position:relative">
+              style="margin:10px;padding:12px;position:relative;">
                 <div class="margin-bottom-20">
                   <div class="title">2009 Porsche Boxster Base Red Convertible</div>
-                  <div class="checkbox" style="top:8px;right:8px;position:absolute;"><input class="form-check-input mt-0" type="checkbox"></div>
-                </div>
-                <img src="https://demo.themesuite.com/automotive-wp/wp-content/uploads/2014/09/2-carrera-1-200x150.jpg" alt="Porsche" width="200" height="150">
-                <table>
-                  <tbody>
-                    <tr>
-                      <td class="vehicle-detail">Body Style:</td>
-                      <td class="spec">Convertible</td>
-                    </tr>
-                    <tr>
-                      <td class="vehicle-detail">Mileage:</td>
-                      <td class="spec">126273</td>
-                    </tr>
-                    <tr>
-                      <td class="vehicle-detail">Transmission:</td>
-                      <td class="spec">5-Speed Manual</td>
-                    </tr>
-                    <tr>
-                      <td class="vehicle-detail">Drivetrain:</td>
-                      <td class="spec">RWD</td>
-                    </tr>
-                    <tr>
-                      <td class="vehicle-detail">Engine :</td>
-                      <td class="spec">2.9L Mid-Engine V6</td>
-                    </tr>
-                  </tbody>
-                </table>
-                <div>
-                  <div style="float:left;margin-right:20px;">
-                    <img src="https://demo.themesuite.com/automotive-wp/wp-content/uploads/2014/09/carfax1.png" alt="CARFAX" class="carfax-logo">
-                  </div>
-
-                  <div class="margin-bottom-20">
-                    <b >Price :</b>
-                    <div class="figure"><h3>$19,995</h3></div>
-                    <div><em>Plus Sales Tax</em></div>
-                  </div>
-                </div>
-                <button type="button" class="btn btn-sm btn-outline-secondary">View Video</button>
-                <button type="button" class="btn btn-sm btn-outline-secondary btn-details">View Details</button>
-              </div>
-              
-              <div class="inventory col-xl-3 col-lg-4 col-md-6 col-sm-12 col-xs-12 border border-secondary rounded-3"
-              style="margin:10px;padding:12px;">
-                <div class="margin-bottom-20">
-                  <div class="title">2009 Porsche Boxster Base Red Convertible</div>
-                  <div class="checkbox"><input class="form-check-input mt-0" type="checkbox"></div>
+                  <div class="checkbox"><input class="form-check-input" type="checkbox"></div>
                 </div>
                 <img src="https://demo.themesuite.com/automotive-wp/wp-content/uploads/2014/09/2-carrera-1-200x150.jpg" alt="Porsche" width="200" height="150">
                 <table>
@@ -314,56 +269,10 @@
               </div>
 
               <div class="inventory col-xl-3 col-lg-4 col-md-6 col-sm-12 col-xs-12 border border-secondary rounded-3"
-              style="margin:10px;padding:12px;">
+              style="margin:10px;padding:12px;position:relative;">
                 <div class="margin-bottom-20">
                   <div class="title">2009 Porsche Boxster Base Red Convertible</div>
-                  <div class="checkbox"><input class="form-check-input mt-0" type="checkbox"></div>
-                </div>
-                <img src="https://demo.themesuite.com/automotive-wp/wp-content/uploads/2014/09/2-carrera-1-200x150.jpg" alt="Porsche" width="200" height="150">
-                <table>
-                  <tbody>
-                    <tr>
-                      <td class="vehicle-detail">Body Style:</td>
-                      <td class="spec">Convertible</td>
-                    </tr>
-                    <tr>
-                      <td class="vehicle-detail">Mileage:</td>
-                      <td class="spec">126273</td>
-                    </tr>
-                    <tr>
-                      <td class="vehicle-detail">Transmission:</td>
-                      <td class="spec">5-Speed Manual</td>
-                    </tr>
-                    <tr>
-                      <td class="vehicle-detail">Drivetrain:</td>
-                      <td class="spec">RWD</td>
-                    </tr>
-                    <tr>
-                      <td class="vehicle-detail">Engine :</td>
-                      <td class="spec">2.9L Mid-Engine V6</td>
-                    </tr>
-                  </tbody>
-                </table>
-                <div>
-                  <div style="float:left;margin-right:20px;">
-                    <img src="https://demo.themesuite.com/automotive-wp/wp-content/uploads/2014/09/carfax1.png" alt="CARFAX" class="carfax-logo">
-                  </div>
-
-                  <div class="margin-bottom-20">
-                    <b >Price :</b>
-                    <div class="figure"><h3>$19,995</h3></div>
-                    <div><em>Plus Sales Tax</em></div>
-                  </div>
-                </div>
-                <button type="button" class="btn btn-sm btn-outline-secondary">View Video</button>
-                <button type="button" class="btn btn-sm btn-outline-secondary btn-details">View Details</button>
-              </div>
-              
-              <div class="inventory col-xl-3 col-lg-4 col-md-6 col-sm-12 col-xs-12 border border-secondary rounded-3"
-              style="margin:10px;padding:12px;">
-                <div class="margin-bottom-20">
-                  <div class="title">2009 Porsche Boxster Base Red Convertible</div>
-                  <div class="checkbox"><input class="form-check-input mt-0" type="checkbox"></div>
+                  <div class="checkbox"><input class="form-check-input" type="checkbox"></div>
                 </div>
                 <img src="https://demo.themesuite.com/automotive-wp/wp-content/uploads/2014/09/2-carrera-1-200x150.jpg" alt="Porsche" width="200" height="150">
                 <table>
@@ -406,56 +315,10 @@
               </div>
 
               <div class="inventory col-xl-3 col-lg-4 col-md-6 col-sm-12 col-xs-12 border border-secondary rounded-3"
-              style="margin:10px;padding:12px;">
+              style="margin:10px;padding:12px;position:relative;">
                 <div class="margin-bottom-20">
                   <div class="title">2009 Porsche Boxster Base Red Convertible</div>
-                  <div class="checkbox"><input class="form-check-input mt-0" type="checkbox"></div>
-                </div>
-                <img src="https://demo.themesuite.com/automotive-wp/wp-content/uploads/2014/09/2-carrera-1-200x150.jpg" alt="Porsche" width="200" height="150">
-                <table>
-                  <tbody>
-                    <tr>
-                      <td class="vehicle-detail">Body Style:</td>
-                      <td class="spec">Convertible</td>
-                    </tr>
-                    <tr>
-                      <td class="vehicle-detail">Mileage:</td>
-                      <td class="spec">126273</td>
-                    </tr>
-                    <tr>
-                      <td class="vehicle-detail">Transmission:</td>
-                      <td class="spec">5-Speed Manual</td>
-                    </tr>
-                    <tr>
-                      <td class="vehicle-detail">Drivetrain:</td>
-                      <td class="spec">RWD</td>
-                    </tr>
-                    <tr>
-                      <td class="vehicle-detail">Engine :</td>
-                      <td class="spec">2.9L Mid-Engine V6</td>
-                    </tr>
-                  </tbody>
-                </table>
-                <div>
-                  <div style="float:left;margin-right:20px;">
-                    <img src="https://demo.themesuite.com/automotive-wp/wp-content/uploads/2014/09/carfax1.png" alt="CARFAX" class="carfax-logo">
-                  </div>
-
-                  <div class="margin-bottom-20">
-                    <b >Price :</b>
-                    <div class="figure"><h3>$19,995</h3></div>
-                    <div><em>Plus Sales Tax</em></div>
-                  </div>
-                </div>
-                <button type="button" class="btn btn-sm btn-outline-secondary">View Video</button>
-                <button type="button" class="btn btn-sm btn-outline-secondary btn-details">View Details</button>
-              </div>
-              
-              <div class="inventory col-xl-3 col-lg-4 col-md-6 col-sm-12 col-xs-12 border border-secondary rounded-3"
-              style="margin:10px;padding:12px;">
-                <div class="margin-bottom-20">
-                  <div class="title">2009 Porsche Boxster Base Red Convertible</div>
-                  <div class="checkbox"><input class="form-check-input mt-0" type="checkbox"></div>
+                  <div class="checkbox"><input class="form-check-input" type="checkbox"></div>
                 </div>
                 <img src="https://demo.themesuite.com/automotive-wp/wp-content/uploads/2014/09/2-carrera-1-200x150.jpg" alt="Porsche" width="200" height="150">
                 <table>
@@ -498,56 +361,10 @@
               </div>
 
               <div class="inventory col-xl-3 col-lg-4 col-md-6 col-sm-12 col-xs-12 border border-secondary rounded-3"
-              style="margin:10px;padding:12px;">
+              style="margin:10px;padding:12px;position:relative;">
                 <div class="margin-bottom-20">
                   <div class="title">2009 Porsche Boxster Base Red Convertible</div>
-                  <div class="checkbox"><input class="form-check-input mt-0" type="checkbox"></div>
-                </div>
-                <img src="https://demo.themesuite.com/automotive-wp/wp-content/uploads/2014/09/2-carrera-1-200x150.jpg" alt="Porsche" width="200" height="150">
-                <table>
-                  <tbody>
-                    <tr>
-                      <td class="vehicle-detail">Body Style:</td>
-                      <td class="spec">Convertible</td>
-                    </tr>
-                    <tr>
-                      <td class="vehicle-detail">Mileage:</td>
-                      <td class="spec">126273</td>
-                    </tr>
-                    <tr>
-                      <td class="vehicle-detail">Transmission:</td>
-                      <td class="spec">5-Speed Manual</td>
-                    </tr>
-                    <tr>
-                      <td class="vehicle-detail">Drivetrain:</td>
-                      <td class="spec">RWD</td>
-                    </tr>
-                    <tr>
-                      <td class="vehicle-detail">Engine :</td>
-                      <td class="spec">2.9L Mid-Engine V6</td>
-                    </tr>
-                  </tbody>
-                </table>
-                <div>
-                  <div style="float:left;margin-right:20px;">
-                    <img src="https://demo.themesuite.com/automotive-wp/wp-content/uploads/2014/09/carfax1.png" alt="CARFAX" class="carfax-logo">
-                  </div>
-
-                  <div class="margin-bottom-20">
-                    <b >Price :</b>
-                    <div class="figure"><h3>$19,995</h3></div>
-                    <div><em>Plus Sales Tax</em></div>
-                  </div>
-                </div>
-                <button type="button" class="btn btn-sm btn-outline-secondary">View Video</button>
-                <button type="button" class="btn btn-sm btn-outline-secondary btn-details">View Details</button>
-              </div>
-              
-              <div class="inventory col-xl-3 col-lg-4 col-md-6 col-sm-12 col-xs-12 border border-secondary rounded-3"
-              style="margin:10px;padding:12px;">
-                <div class="margin-bottom-20">
-                  <div class="title">2009 Porsche Boxster Base Red Convertible</div>
-                  <div class="checkbox"><input class="form-check-input mt-0" type="checkbox"></div>
+                  <div class="checkbox"><input class="form-check-input" type="checkbox"></div>
                 </div>
                 <img src="https://demo.themesuite.com/automotive-wp/wp-content/uploads/2014/09/2-carrera-1-200x150.jpg" alt="Porsche" width="200" height="150">
                 <table>
@@ -590,56 +407,10 @@
               </div>
 
               <div class="inventory col-xl-3 col-lg-4 col-md-6 col-sm-12 col-xs-12 border border-secondary rounded-3"
-              style="margin:10px;padding:12px;">
+              style="margin:10px;padding:12px;position:relative;">
                 <div class="margin-bottom-20">
                   <div class="title">2009 Porsche Boxster Base Red Convertible</div>
-                  <div class="checkbox"><input class="form-check-input mt-0" type="checkbox"></div>
-                </div>
-                <img src="https://demo.themesuite.com/automotive-wp/wp-content/uploads/2014/09/2-carrera-1-200x150.jpg" alt="Porsche" width="200" height="150">
-                <table>
-                  <tbody>
-                    <tr>
-                      <td class="vehicle-detail">Body Style:</td>
-                      <td class="spec">Convertible</td>
-                    </tr>
-                    <tr>
-                      <td class="vehicle-detail">Mileage:</td>
-                      <td class="spec">126273</td>
-                    </tr>
-                    <tr>
-                      <td class="vehicle-detail">Transmission:</td>
-                      <td class="spec">5-Speed Manual</td>
-                    </tr>
-                    <tr>
-                      <td class="vehicle-detail">Drivetrain:</td>
-                      <td class="spec">RWD</td>
-                    </tr>
-                    <tr>
-                      <td class="vehicle-detail">Engine :</td>
-                      <td class="spec">2.9L Mid-Engine V6</td>
-                    </tr>
-                  </tbody>
-                </table>
-                <div>
-                  <div style="float:left;margin-right:20px;">
-                    <img src="https://demo.themesuite.com/automotive-wp/wp-content/uploads/2014/09/carfax1.png" alt="CARFAX" class="carfax-logo">
-                  </div>
-
-                  <div class="margin-bottom-20">
-                    <b >Price :</b>
-                    <div class="figure"><h3>$19,995</h3></div>
-                    <div><em>Plus Sales Tax</em></div>
-                  </div>
-                </div>
-                <button type="button" class="btn btn-sm btn-outline-secondary">View Video</button>
-                <button type="button" class="btn btn-sm btn-outline-secondary btn-details">View Details</button>
-              </div>
-              
-              <div class="inventory col-xl-3 col-lg-4 col-md-6 col-sm-12 col-xs-12 border border-secondary rounded-3"
-              style="margin:10px;padding:12px;">
-                <div class="margin-bottom-20">
-                  <div class="title">2009 Porsche Boxster Base Red Convertible</div>
-                  <div class="checkbox"><input class="form-check-input mt-0" type="checkbox"></div>
+                  <div class="checkbox"><input class="form-check-input" type="checkbox"></div>
                 </div>
                 <img src="https://demo.themesuite.com/automotive-wp/wp-content/uploads/2014/09/2-carrera-1-200x150.jpg" alt="Porsche" width="200" height="150">
                 <table>
@@ -682,10 +453,10 @@
               </div>
 
               <div class="inventory col-xl-3 col-lg-4 col-md-6 col-sm-12 col-xs-12 border border-secondary rounded-3"
-              style="margin:10px;padding:12px;">
+              style="margin:10px;padding:12px;position:relative;">
                 <div class="margin-bottom-20">
                   <div class="title">2009 Porsche Boxster Base Red Convertible</div>
-                  <div class="checkbox"><input class="form-check-input mt-0" type="checkbox"></div>
+                  <div class="checkbox"><input class="form-check-input" type="checkbox"></div>
                 </div>
                 <img src="https://demo.themesuite.com/automotive-wp/wp-content/uploads/2014/09/2-carrera-1-200x150.jpg" alt="Porsche" width="200" height="150">
                 <table>
@@ -726,12 +497,242 @@
                 <button type="button" class="btn btn-sm btn-outline-secondary">View Video</button>
                 <button type="button" class="btn btn-sm btn-outline-secondary btn-details">View Details</button>
               </div>
-              
+
               <div class="inventory col-xl-3 col-lg-4 col-md-6 col-sm-12 col-xs-12 border border-secondary rounded-3"
-              style="margin:10px;padding:12px;">
+              style="margin:10px;padding:12px;position:relative;">
                 <div class="margin-bottom-20">
                   <div class="title">2009 Porsche Boxster Base Red Convertible</div>
-                  <div class="checkbox"><input class="form-check-input mt-0" type="checkbox"></div>
+                  <div class="checkbox"><input class="form-check-input" type="checkbox"></div>
+                </div>
+                <img src="https://demo.themesuite.com/automotive-wp/wp-content/uploads/2014/09/2-carrera-1-200x150.jpg" alt="Porsche" width="200" height="150">
+                <table>
+                  <tbody>
+                    <tr>
+                      <td class="vehicle-detail">Body Style:</td>
+                      <td class="spec">Convertible</td>
+                    </tr>
+                    <tr>
+                      <td class="vehicle-detail">Mileage:</td>
+                      <td class="spec">126273</td>
+                    </tr>
+                    <tr>
+                      <td class="vehicle-detail">Transmission:</td>
+                      <td class="spec">5-Speed Manual</td>
+                    </tr>
+                    <tr>
+                      <td class="vehicle-detail">Drivetrain:</td>
+                      <td class="spec">RWD</td>
+                    </tr>
+                    <tr>
+                      <td class="vehicle-detail">Engine :</td>
+                      <td class="spec">2.9L Mid-Engine V6</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <div>
+                  <div style="float:left;margin-right:20px;">
+                    <img src="https://demo.themesuite.com/automotive-wp/wp-content/uploads/2014/09/carfax1.png" alt="CARFAX" class="carfax-logo">
+                  </div>
+
+                  <div class="margin-bottom-20">
+                    <b >Price :</b>
+                    <div class="figure"><h3>$19,995</h3></div>
+                    <div><em>Plus Sales Tax</em></div>
+                  </div>
+                </div>
+                <button type="button" class="btn btn-sm btn-outline-secondary">View Video</button>
+                <button type="button" class="btn btn-sm btn-outline-secondary btn-details">View Details</button>
+              </div>
+
+              <div class="inventory col-xl-3 col-lg-4 col-md-6 col-sm-12 col-xs-12 border border-secondary rounded-3"
+              style="margin:10px;padding:12px;position:relative;">
+                <div class="margin-bottom-20">
+                  <div class="title">2009 Porsche Boxster Base Red Convertible</div>
+                  <div class="checkbox"><input class="form-check-input" type="checkbox"></div>
+                </div>
+                <img src="https://demo.themesuite.com/automotive-wp/wp-content/uploads/2014/09/2-carrera-1-200x150.jpg" alt="Porsche" width="200" height="150">
+                <table>
+                  <tbody>
+                    <tr>
+                      <td class="vehicle-detail">Body Style:</td>
+                      <td class="spec">Convertible</td>
+                    </tr>
+                    <tr>
+                      <td class="vehicle-detail">Mileage:</td>
+                      <td class="spec">126273</td>
+                    </tr>
+                    <tr>
+                      <td class="vehicle-detail">Transmission:</td>
+                      <td class="spec">5-Speed Manual</td>
+                    </tr>
+                    <tr>
+                      <td class="vehicle-detail">Drivetrain:</td>
+                      <td class="spec">RWD</td>
+                    </tr>
+                    <tr>
+                      <td class="vehicle-detail">Engine :</td>
+                      <td class="spec">2.9L Mid-Engine V6</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <div>
+                  <div style="float:left;margin-right:20px;">
+                    <img src="https://demo.themesuite.com/automotive-wp/wp-content/uploads/2014/09/carfax1.png" alt="CARFAX" class="carfax-logo">
+                  </div>
+
+                  <div class="margin-bottom-20">
+                    <b >Price :</b>
+                    <div class="figure"><h3>$19,995</h3></div>
+                    <div><em>Plus Sales Tax</em></div>
+                  </div>
+                </div>
+                <button type="button" class="btn btn-sm btn-outline-secondary">View Video</button>
+                <button type="button" class="btn btn-sm btn-outline-secondary btn-details">View Details</button>
+              </div>
+
+              <div class="inventory col-xl-3 col-lg-4 col-md-6 col-sm-12 col-xs-12 border border-secondary rounded-3"
+              style="margin:10px;padding:12px;position:relative;">
+                <div class="margin-bottom-20">
+                  <div class="title">2009 Porsche Boxster Base Red Convertible</div>
+                  <div class="checkbox"><input class="form-check-input" type="checkbox"></div>
+                </div>
+                <img src="https://demo.themesuite.com/automotive-wp/wp-content/uploads/2014/09/2-carrera-1-200x150.jpg" alt="Porsche" width="200" height="150">
+                <table>
+                  <tbody>
+                    <tr>
+                      <td class="vehicle-detail">Body Style:</td>
+                      <td class="spec">Convertible</td>
+                    </tr>
+                    <tr>
+                      <td class="vehicle-detail">Mileage:</td>
+                      <td class="spec">126273</td>
+                    </tr>
+                    <tr>
+                      <td class="vehicle-detail">Transmission:</td>
+                      <td class="spec">5-Speed Manual</td>
+                    </tr>
+                    <tr>
+                      <td class="vehicle-detail">Drivetrain:</td>
+                      <td class="spec">RWD</td>
+                    </tr>
+                    <tr>
+                      <td class="vehicle-detail">Engine :</td>
+                      <td class="spec">2.9L Mid-Engine V6</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <div>
+                  <div style="float:left;margin-right:20px;">
+                    <img src="https://demo.themesuite.com/automotive-wp/wp-content/uploads/2014/09/carfax1.png" alt="CARFAX" class="carfax-logo">
+                  </div>
+
+                  <div class="margin-bottom-20">
+                    <b >Price :</b>
+                    <div class="figure"><h3>$19,995</h3></div>
+                    <div><em>Plus Sales Tax</em></div>
+                  </div>
+                </div>
+                <button type="button" class="btn btn-sm btn-outline-secondary">View Video</button>
+                <button type="button" class="btn btn-sm btn-outline-secondary btn-details">View Details</button>
+              </div>
+
+              <div class="inventory col-xl-3 col-lg-4 col-md-6 col-sm-12 col-xs-12 border border-secondary rounded-3"
+              style="margin:10px;padding:12px;position:relative;">
+                <div class="margin-bottom-20">
+                  <div class="title">2009 Porsche Boxster Base Red Convertible</div>
+                  <div class="checkbox"><input class="form-check-input" type="checkbox"></div>
+                </div>
+                <img src="https://demo.themesuite.com/automotive-wp/wp-content/uploads/2014/09/2-carrera-1-200x150.jpg" alt="Porsche" width="200" height="150">
+                <table>
+                  <tbody>
+                    <tr>
+                      <td class="vehicle-detail">Body Style:</td>
+                      <td class="spec">Convertible</td>
+                    </tr>
+                    <tr>
+                      <td class="vehicle-detail">Mileage:</td>
+                      <td class="spec">126273</td>
+                    </tr>
+                    <tr>
+                      <td class="vehicle-detail">Transmission:</td>
+                      <td class="spec">5-Speed Manual</td>
+                    </tr>
+                    <tr>
+                      <td class="vehicle-detail">Drivetrain:</td>
+                      <td class="spec">RWD</td>
+                    </tr>
+                    <tr>
+                      <td class="vehicle-detail">Engine :</td>
+                      <td class="spec">2.9L Mid-Engine V6</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <div>
+                  <div style="float:left;margin-right:20px;">
+                    <img src="https://demo.themesuite.com/automotive-wp/wp-content/uploads/2014/09/carfax1.png" alt="CARFAX" class="carfax-logo">
+                  </div>
+
+                  <div class="margin-bottom-20">
+                    <b >Price :</b>
+                    <div class="figure"><h3>$19,995</h3></div>
+                    <div><em>Plus Sales Tax</em></div>
+                  </div>
+                </div>
+                <button type="button" class="btn btn-sm btn-outline-secondary">View Video</button>
+                <button type="button" class="btn btn-sm btn-outline-secondary btn-details">View Details</button>
+              </div>
+
+              <div class="inventory col-xl-3 col-lg-4 col-md-6 col-sm-12 col-xs-12 border border-secondary rounded-3"
+              style="margin:10px;padding:12px;position:relative;">
+                <div class="margin-bottom-20">
+                  <div class="title">2009 Porsche Boxster Base Red Convertible</div>
+                  <div class="checkbox"><input class="form-check-input" type="checkbox"></div>
+                </div>
+                <img src="https://demo.themesuite.com/automotive-wp/wp-content/uploads/2014/09/2-carrera-1-200x150.jpg" alt="Porsche" width="200" height="150">
+                <table>
+                  <tbody>
+                    <tr>
+                      <td class="vehicle-detail">Body Style:</td>
+                      <td class="spec">Convertible</td>
+                    </tr>
+                    <tr>
+                      <td class="vehicle-detail">Mileage:</td>
+                      <td class="spec">126273</td>
+                    </tr>
+                    <tr>
+                      <td class="vehicle-detail">Transmission:</td>
+                      <td class="spec">5-Speed Manual</td>
+                    </tr>
+                    <tr>
+                      <td class="vehicle-detail">Drivetrain:</td>
+                      <td class="spec">RWD</td>
+                    </tr>
+                    <tr>
+                      <td class="vehicle-detail">Engine :</td>
+                      <td class="spec">2.9L Mid-Engine V6</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <div>
+                  <div style="float:left;margin-right:20px;">
+                    <img src="https://demo.themesuite.com/automotive-wp/wp-content/uploads/2014/09/carfax1.png" alt="CARFAX" class="carfax-logo">
+                  </div>
+
+                  <div class="margin-bottom-20">
+                    <b >Price :</b>
+                    <div class="figure"><h3>$19,995</h3></div>
+                    <div><em>Plus Sales Tax</em></div>
+                  </div>
+                </div>
+                <button type="button" class="btn btn-sm btn-outline-secondary">View Video</button>
+                <button type="button" class="btn btn-sm btn-outline-secondary btn-details">View Details</button>
+              </div>
+
+              <div class="inventory col-xl-3 col-lg-4 col-md-6 col-sm-12 col-xs-12 border border-secondary rounded-3"
+              style="margin:10px;padding:12px;position:relative;">
+                <div class="margin-bottom-20">
+                  <div class="title">2009 Porsche Boxster Base Red Convertible</div>
+                  <div class="checkbox"><input class="form-check-input" type="checkbox"></div>
                 </div>
                 <img src="https://demo.themesuite.com/automotive-wp/wp-content/uploads/2014/09/2-carrera-1-200x150.jpg" alt="Porsche" width="200" height="150">
                 <table>
@@ -840,7 +841,7 @@
           </div>
 
           <div class="col-lg-8 col-md-8 col-sm-8">
-            <div class="col-lg-12" style="margin:auto 5%;padding: 8px;">
+            <div class="col-lg-12" style="padding: 8px 5%;">
               <img src="icon.jpg" alt="bottom-icon" width="300px">
             </div>
             <div class="col-lg-12">
@@ -863,3 +864,9 @@
     </section>
   </body>
 </html>
+
+
+
+
+
+
