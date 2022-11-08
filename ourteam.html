@@ -15,14 +15,14 @@
         .btn-group{margin: auto;}
       /*Section one*/
         .first-heading{position:relative;top:60%;margin:0 5%;color:#FFF}
-        .bg-img{width: 100%;height: 300px;background-image: url('https://adventure.com/wp-content/uploads/2022/07/Hero-Inside-South-Americas-icy-new-National-Park-Photo-credit-Pilar-Valenzuela-Delpiano-12-scaled.jpg');background-size: cover;background-position: center center;}
+        .bg-img{width:100%;height:300px;background-image: url('https://adventure.com/wp-content/uploads/2022/07/Hero-Inside-South-Americas-icy-new-National-Park-Photo-credit-Pilar-Valenzuela-Delpiano-12-scaled.jpg');background-size: cover;background-position: center center;}
       /*Section two*/
         .manager-detail{width:100%;height:auto;}
         .manager-detail>div{padding:10px}
         .manager-infor h4{padding: 5px 0 5px 0;}
         .manager-infor div{padding:8px;line-height:30px;}
         .manager-infor{padding:0 5px}
-        .manager-infor>h5{color:#f00;margin-bottom: 60px;}
+        .manager-infor>h5{color:#f00;margin-bottom:60px;}
         .manager-img>img {width:100%;max-width:300px;}
         .manager-img{text-align:center;}
       /*Section Three*/
@@ -37,49 +37,53 @@
         .email{overflow:auto;}
       /*Section Four*/
         .inventory{padding:8px;}
-        .inventory-col{padding: 4px;}
-        .btn-inventory-container{display: flex;flex-direction: row;}
-        .btn-search-inventory{margin-left: auto;margin-right:5px;}
+        .inventory-col{padding:4px;}
+        .btn-inventory-container{display:flex;flex-direction:row;}
+        .btn-search-inventory{margin-left:auto;margin-right:5px;}
       /*Section Five*/
         .map{overflow:hidden;padding-bottom:50%;position:relative;height:0;}
         .map iframe{top:20px;height:100%;width:100%;position:absolute;}
       /*Section Six*/
-        .footer{color:#fff;padding:20px 2%;background-color:#333;opacity: 0.9;}
-        .footer h4{margin: 10px 20px;}
-        .footer a{color:#999;text-decoration:none;}
-        .footer>div{margin:20px 0;}
-        .considerations li{padding:5px;line-height: 30px;}
-        .twitterfeed{padding:5px;line-height: 30px;}
+        .footer-infor{color:#fff;padding:20px 2%;background-color:#333;opacity:0.9;}
+        .footer-infor h4{margin:10px 20px;}
+        .footer-infor a{color:#999;text-decoration:none;}
+        .footer-infor>div{margin:20px 0;}
+        .considerations li{padding:5px;line-height:30px;}
+        .twitterfeed{padding:5px;line-height:30px;}
         .tweet-text>li{margin:0px 0}
-      /*Section Seven*/
-        .menu-item{display:inline-block;;padding: 8px}
+      /*Section Footer*/
+        .footer{background-color:#000;opacity:0.8;color:#fff}
+        .footer a{color:#fff;text-decoration:none;}
+        .footer>div{margin:20px 0;}
+        .logo-footer>div{margin:auto 5%;padding:8px;}
+        .menu-item{display:inline-block;;padding:8px}
     </style>
   </head>
   <body>
 
     <div>
       <header class="header">
-      <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
-        <div class="btn-group mr-2 btn-group-sm" role="group" aria-label="First group">
-          <button type="button" class="btn btn-outline-secondary">LOGIN</button>
-          <button type="button" class="btn btn-outline-secondary">CART</button>
-          <button type="button" class="btn btn-outline-secondary">LANGUAGE</button>
-          <button type="button" class="btn btn-outline-secondary">Search</button>
+        <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+          <div class="btn-group mr-2 btn-group-sm" role="group" aria-label="First group">
+            <button type="button" class="btn btn-outline-secondary">LOGIN</button>
+            <button type="button" class="btn btn-outline-secondary">CART</button>
+            <button type="button" class="btn btn-outline-secondary">LANGUAGE</button>
+            <button type="button" class="btn btn-outline-secondary">Search</button>
+          </div>
+          <div class="btn-group mr-2 btn-group-sm" role="group" aria-label="Second group">
+            <button type="button" class="btn btn-outline-secondary">1-800-567-0123</button>
+            <button type="button" class="btn btn-outline-secondary">107 SUNSET BLVD., BEVERLY HILLS, CA 90210</button>
+          </div>
         </div>
-        <div class="btn-group mr-2 btn-group-sm" role="group" aria-label="Second group">
-          <button type="button" class="btn btn-outline-secondary">1-800-567-0123</button>
-          <button type="button" class="btn btn-outline-secondary">107 SUNSET BLVD., BEVERLY HILLS, CA 90210</button>
-        </div>
-      </div>
       </header>
 
       <div class="bottom-header">
         <nav class="navbar navbar-expand-lg navbar-dark" style="background: rgba(0,0,0,0.5);">
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbar Nav" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span>
-          </button>
           <div class="navbar-logo"style="margin-left:3%;">
             <a class="navbar-brand" style="display: block;"><span><em><strong>Automotive</strong></em></span></a><span style="color:#FFF">Template</span>
           </div>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbar Nav" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span>
+          </button>
           <div class="navbar-navigation collapse navbar-collapse justify-content-center" style="margin-left:10%;">
             <div class="col-md-6 col-sm-6 col-12">
               <ul class="navbar-nav">
@@ -290,7 +294,7 @@
 
     <section>
       <div class="container-fluid" style="padding:0 5%">
-        <div class="col">
+        <div>
           <div><h5><span style="color: #f00;"><strong>SEARCH</strong></span> OUR INVENTORY</h5>
             <div style="background-color:#e0e0e0;padding:2%;">
               <form>
@@ -401,11 +405,11 @@
 
     <section style="margin:0px;">
       <div class="container-fluid">
-        <div class="row footer">
+        <div class="row footer-infor">
           <div class="col-lg-6 col-md-6 col-sm-12">
             <h4>Things to Consider</h4>
             <div class="considerations">
-              <ul style="">
+              <ul>
                 <li>Fully responsive and ready for all mobile devices</li>
                 <li>Integrated inventory management system</li>
                 <li>Simple option panel and very easy to customize</li>
@@ -456,8 +460,8 @@
     </section>
 
     <section style="margin:0px;">
-      <div class="container-fluid" style="color:#fff">
-        <div class="row footer" style="background-color:#000;opacity:0.8;">
+      <div class="container-fluid">
+        <div class="row footer">
           <div class="col-lg-4 col-md-4 col-sm-4 logo-footer">
             <div>
               <a href="">
@@ -475,7 +479,7 @@
 
           <div class="col-lg-8 col-md-8 col-sm-8">
             <div class="col-lg-12" style="padding: 8px 5%;">
-              <img src="icon.jpg" alt="bottom-icon" width="300px">
+              <img src="bottom-icon.jpg" alt="bottom-icon" width="300px">
             </div>
             <div class="col-lg-12">
               <ul>
@@ -490,10 +494,10 @@
               </ul>
             </div>
           </div>
-
           
         </div>
       </div>
     </section>
+
   </body>
 </html>

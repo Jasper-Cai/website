@@ -7,75 +7,94 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"crossorigin="anonymous"/>
     <style>
       section{margin:50px 0;}
-      .header{position:fixed;top:0px;left:0px;width:100%;min-height:50px;background-color:#000;opacity:0.7;padding:20px;}
-      .bottom-header{position:fixed;top:0px;left:0px;width:100%;min-height:50px;margin-top:70px;}
-      .btn-group{margin: auto;}
-      
-      .first-heading{position: relative;top:20%;left:5%;width:max-content}
-
-      .bg-img{width: 100%;height: 500px;background-image: url('https://www.topgear.com/sites/default/files/2021/11/PCGB21_1364_fine.jpg');background-size: cover;}
-
-      .column h3{margin: 20px 0 10px 0;color: #f00;text-align: center;}
-      .column p{text-align: center;vertical-align: middle;padding:8px;line-height:30px;}
-
-      .product_preview{display:flex;width:100%;}
-      .product_preview>div{flex:1;margin: 20px}
-
-      .feature-item{padding:8px;line-height:30px;}
-      .feature-item>h3{margin-top:15px;line-height:30px;}
-      
-      @media screen and (max-width: 1000px) {.column {flex: 100%;max-width: 100%;}.product_preview{flex-direction: column;}    }
-      @media screen and (max-width: 500px) {.column {flex: 100%;max-width: 100%;}.product_preview>div{width:100%}   }  
-      
-      .inventory{padding:8px;}
-      .inventory-col{padding: 4px;}
-
-      .recent-veh-img>img {width:100%;}
-
-      .map{overflow:hidden;padding-bottom:50%;position:relative;height:0;}
-      .map iframe{top:20px;height:100%;width:100%;position:absolute;}
-
-      .bg-lanbo{background-image:url(https://i.pinimg.com/originals/95/6a/55/956a55e67f140aa6080beb4941a799af.jpg);background-position: center center;background-size: cover;height:auto;width:100%;padding:80px;}
-      .icon-group{text-align: center;vertical-align: middle;}
-
-      .footer h4{margin-bottom: 20px;}
-      .footer a{color:#fff;text-decoration:none;}
-      .newsletter{padding:8px}
-      .twitter-feed{padding:8px}
-      .contact-us{padding: 8px;}
-      .footer>div{margin:20px 0;}
-      .logo-footer>div{margin:auto 5%;padding: 8px;}
-      .menu-item{display:inline-block;;padding: 8px}
+      /*Heading*/
+        .header{position:fixed;top:0px;left:0px;width:100%;min-height:50px;background-color:#000;opacity:0.7;padding:20px;}
+        .bottom-header{position:fixed;top:0px;left:0px;width:100%;min-height:50px;margin-top:70px;}
+        .btn-group{margin:auto;}
+      /*Section one*/
+        .first-heading{position:relative;top:20%;left:5%;width:max-content}
+        .bg-img{width:100%;height:500px;background-image: url('https://www.topgear.com/sites/default/files/2021/11/PCGB21_1364_fine.jpg');background-size: cover;background-position: center center;}
+      /*Section two*/
+        .product_preview{display:flex;width:100%;padding:20px 5%}
+        .product_preview>div{flex:1;margin:20px}
+        .product_preview_item{text-align:center;}
+        .product_preview_item h3{margin: 20px 0 10px 0;color: #f00;text-align:center;}
+        .product_preview_item p{text-align:center;vertical-align:middle;padding:8px;line-height:30px;}
+        .product_preview_item>img{width:100%;max-width:300px;}
+        @media screen and (max-width: 1000px) {.product_preview_item {flex: 100%;max-width: 100%;}.product_preview{flex-direction: column;}    }
+        @media screen and (max-width: 500px) {.product_preview_item {flex: 100%;max-width: 100%;}.product_preview>div{width:100%}   } 
+      /*Section Three*/
+        .feature-item{padding:8px;line-height:30px;}
+        .feature-item>h3{margin-top:15px;line-height:30px;}
+        .feature-item>img{max-width:100px;}
+       /*Section Four*/
+        .inventory-sec-heading{margin-bottom:40px;}
+        .inventory-sec-heading span{font-weight:800;color:#f00}
+        .inventory{padding:8px;}
+        .inventory-col{padding:4px;}
+        .btn-inventory-container{display:flex;flex-direction:row;}
+        .btn-search-inventory{margin-left:auto;margin-right:5px;;}
+      /*Section Five*/
+        .recent-vehicles{text-align:center;}
+        .recent-vehicles-infor{margin:10px auto;}
+        .recent-vehicles-item>img{width:100%;max-width:167px;min-width:110px;}
+      /*Section Six*/
+        .map{overflow:hidden;padding-bottom:50%;position:relative;height:0;}
+        .map iframe{top:20px;height:100%;width:100%;position:absolute;}
+      /*Section Seven*/
+        .service-item{margin:10px auto 10px auto;}
+        .service-item img{height:100px}
+        .service-item-timetable{margin:auto;max-width:500px;}
+      /*Section Eight*/
+        .bg-img{background-image:url(https://i.pinimg.com/originals/95/6a/55/956a55e67f140aa6080beb4941a799af.jpg);background-position: center center;background-size:cover;height:auto;width:100%;padding:80px;}
+        .icon-group{text-align:center;vertical-align:middle;}
+        .icon-group img{max-width:5rem;}
+        .icon-group span{color:#fff}
+      /*Section Nine*/
+        .contact{padding:20px 2%;background-color:#333;opacity:0.9;color:#fff}
+        .contact h4{margin-bottom:20px;}
+        .contact a{color:#fff;text-decoration:none;}
+        .contact>div{margin:10px 0;}
+        .newsletter{padding:8px}
+        .twitter-feed{padding:8px}
+        .contact-us{padding:8px;}
+      /*Section Footer*/
+        .footer{background-color:#000;opacity:0.8;color:#fff}
+        .footer a{color:#fff;text-decoration:none;}
+        .footer>div{margin:20px 0;}
+        .logo-footer>div{margin:auto 5%;padding:8px;}
+        .menu-item{display:inline-block;;padding:8px}
     </style>
     <title>Document</title>
 
   </head>
   <body>
+
     <div>
       <header class="header">
-      <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
-        <div class="btn-group mr-2 btn-group-sm" role="group" aria-label="First group">
-          <button type="button" class="btn btn-outline-secondary">LOGIN</button>
-          <button type="button" class="btn btn-outline-secondary">CART</button>
-          <button type="button" class="btn btn-outline-secondary">LANGUAGE</button>
-          <button type="button" class="btn btn-outline-secondary">Search</button>
+        <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+          <div class="btn-group mr-2 btn-group-sm" role="group" aria-label="First group">
+            <button type="button" class="btn btn-outline-secondary">LOGIN</button>
+            <button type="button" class="btn btn-outline-secondary">CART</button>
+            <button type="button" class="btn btn-outline-secondary">LANGUAGE</button>
+            <button type="button" class="btn btn-outline-secondary">Search</button>
+          </div>
+          <div class="btn-group mr-2 btn-group-sm" role="group" aria-label="Second group">
+            <button type="button" class="btn btn-outline-secondary">1-800-567-0123</button>
+            <button type="button" class="btn btn-outline-secondary">107 SUNSET BLVD., BEVERLY HILLS, CA 90210</button>
+          </div>
         </div>
-        <div class="btn-group mr-2 btn-group-sm" role="group" aria-label="Second group">
-          <button type="button" class="btn btn-outline-secondary">1-800-567-0123</button>
-          <button type="button" class="btn btn-outline-secondary">107 SUNSET BLVD., BEVERLY HILLS, CA 90210</button>
-        </div>
-      </div>
       </header>
 
       <div class="bottom-header">
         <nav class="navbar navbar-expand-lg navbar-light" style="background: rgba(0,0,0,0.1);">
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbar Nav" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span>
-          </button>
           <div class="navbar-logo"style="margin-left:3%;">
             <a class="navbar-brand" style="display: block;">
               <span><em><strong>Automotive</strong></em></span></a>
               <span>Template</span>
           </div>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbar Nav" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span>
+          </button>
           <div class="navbar-navigation collapse navbar-collapse justify-content-center" style="margin-left:10%;">
             <div class="col-md-6 col-sm-6 col-12">
               <ul class="navbar-nav">
@@ -109,10 +128,10 @@
     </section>
 
     <section>
-      <div class="product_preview" style="padding:20px 5%">
+      <div class="product_preview">
         <div>
-          <div class="column">
-            <img style="width: 100%" src="http://robbreport.com/wp-content/uploads/2014/10/1_2015_porsche_918_spyder_72_1.jpg" alt="Porsche 918"/>
+          <div class="column product_preview_item">
+            <img src="http://robbreport.com/wp-content/uploads/2014/10/1_2015_porsche_918_spyder_72_1.jpg" alt="Porsche 918"/>
             <h3>FACTORY READY FOR TRACK DAY</h3>
             <p>Sea veniam lucilius neglegentur ad, an per sumo volum voluptatibus. Qui cu everti repudiare. Eam ut cibo nobis aperiam, elit qualisque at cum. Possit antiopam id est. Illud delicata ea mel, sed novum mucius id. Nullam qua.
             </p>
@@ -120,8 +139,8 @@
         </div>
       
         <div>
-          <div class="column">
-            <img style="width: 100%" src="https://di-uploads-pod16.dealerinspire.com/continentalferrari/uploads/2018/04/LaFerrari-Aperta3.jpeg" alt="LaFerrari"/>
+          <div class="column product_preview_item">
+            <img src="https://di-uploads-pod16.dealerinspire.com/continentalferrari/uploads/2018/04/LaFerrari-Aperta3.jpeg" alt="LaFerrari"/>
             <h3>SPORT UTILITY FOR THE FAMILY</h3> 
             <p>Cum ut tractatos imperdiet, no tamquam facilisi qui. Eum tibique consectetuer in, an legimus referrentur vis, vocent deseruisse ex mel. Sed te idque graecis. Vel ne libris dolores, in mel graece dolorum.
             </p>
@@ -129,8 +148,8 @@
         </div>
 
         <div>
-          <div class="column">
-            <img style="width: 100%" src="https://robbreport.com/wp-content/uploads/2020/04/mclaren-p1-5th-anniversary_2667-1.jpg" alt="McLaren P1"/>
+          <div class="column product_preview_item">
+            <img src="https://robbreport.com/wp-content/uploads/2020/04/mclaren-p1-5th-anniversary_2667-1.jpg" alt="McLaren P1"/>
             <h3>MAKE AN EXECUTIVE STATEMENT</h3>
             <p>Te inermis cotidieque cum, sed ea utroque atomorum sadipscing. Qui id oratio everti scaevola, vim ea augue ponderum vituperatoribus, quo adhuc abhorreant omittantur ad. No his fierent perpetua consequat, et nis.</p>
           </div>
@@ -139,29 +158,29 @@
     </section>
 
    <section style="background-color:#e0e0e0;">
-        <div class="container-fluid" style="text-align:center;padding:20px 5%">
-            <div class="row">
+        <div class="container-fluid">
+            <div class="row" style="text-align:center;padding:20px 5%">
                 <div class="col-lg-3 col-md-6 col-sm-6">
                     <div class="feature-item">
-                        <img style="max-width: 10rem;" src="icon-1.PNG" alt="icon-1"/>
+                        <img src="icon-1.PNG" alt="icon-1"/>
                         <h3>Results Driven</h3><p>Sed ut perspiciatis unde om nis natus error sit volup atem accusant dolorem que laudantium. Totam aperiam, eaque ipsa quae ai.</p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 col-sm-6">
                     <div class="feature-item">
-                        <img style="max-width: 10rem;" src="icon-2.PNG" alt="icon-2"/>
+                        <img src="icon-2.PNG" alt="icon-2"/>
                         <h3>Proven Technology</h3> <p>Sed ut perspiciatis unde om nis natus error sit volup atem accusant dolorem que laudantium. Totam aperiam, eaque ipsa quae ai.</p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 col-sm-6">
                     <div class="feature-item" style="padding:8px">
-                        <img style="max-width: 10rem;" src="icon-3.PNG" alt="icon-3"/>
+                        <img src="icon-3.PNG" alt="icon-3"/>
                         <h3>Winning Culture</h3><p>Sed ut perspiciatis unde om nis natus error sit volup atem accusant dolorem que laudantium. Totam aperiam, eaque ipsa quae ai.</p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 col-sm-6">
                     <div class="feature-item">
-                        <img style="max-width: 10rem;" src="icon-4.PNG" alt="icon-4"/>
+                        <img src="icon-4.PNG" alt="icon-4"/>
                         <h3>Winning Culture</h3><p>Sed ut perspiciatis unde om nis natus error sit volup atem accusant dolorem que laudantium. Totam aperiam, eaque ipsa quae ai.</p>
                     </div>
                 </div>
@@ -171,20 +190,24 @@
 
     <section>
       <div class="container-fluid">
-        <div class="row" style="padding:28px 5%;line-height:30px;">
-          <div class="col">
-            <h4><span style="font-weight: 800;color: #f00;"><strong>WELCOME</strong></span> TO YOUR NEW WEBSITE</h4>  
+        <div class="row" style="padding:2px 5%;line-height:30px;">
+          <div class="col-lg-6 col-md-12 col-sm-12">
+            <div class="inventory-sec-heading">
+              <h4><span><strong>WELCOME</strong></span> TO YOUR NEW WEBSITE</h4>
+            </div>  
             <div>
               <div>
-                <p>Lorem ipsum dolor sit amet, falli tollit cetero te eos. Ea ullum liber aperiri mi, impetus ate  philosophia ad duo, quem regione ne ius. Vis quis lobortis dissentias ex, in du aft philosophia, malis necessitatibus no mei. Volumus sensibus qui ex, eum duis doming ad. Modo liberavisse eu mel, no viris prompta sit. Pro labore sadipscing et. Ne peax egat usu te mel <em style="color: #f00;">vivendo scriptorem</em>. Pro labore sadipscing et. Ne pertinax egat usu te mel vivendo scriptorem.</p> 
+                <p>Lorem ipsum dolor sit amet, falli tollit cetero te eos. Ea ullum liber aperiri mi, impetus ate  philosophia ad duo, quem regione ne ius. Vis quis lobortis dissentias ex, in du aft philosophia, malis necessitatibus no mei. Volumus sensibus qui ex, eum duis doming ad. Modo liberavisse eu mel, no viris prompta sit. Pro labore sadipscing et. Ne peax egat usu te mel <em style="color:#f00;">vivendo scriptorem</em>. Pro labore sadipscing et. Ne pertinax egat usu te mel vivendo scriptorem.</p> 
 
-                <p>Cum ut tractatos imperdiet, no tamquam facilisi qui. Eum tibique onsectetuer in, an referrentur vis, vocent deseruisse ex mel. Sed te <em style="color: #f00;">idque graecis</em>. Vel ne libris dolores, mel graece mel vivendo scriptorem dolorum.  </p>
+                <p>Cum ut tractatos imperdiet, no tamquam facilisi qui. Eum tibique onsectetuer in, an referrentur vis, vocent deseruisse ex mel. Sed te <em style="color:#f00;">idque graecis</em>. Vel ne libris dolores, mel graece mel vivendo scriptorem dolorum.</p>
               </div>
             </div>
           </div>
       
-          <div class="col">
-          <div><h4><span style="font-weight: 800;color: #f00;"><strong>SEARCH</strong></span> OUR INVENTORY</h4>
+          <div class="col-lg-6 col-md-12 col-sm-12">
+            <div class="inventory-sec-heading">
+              <h4><span><strong>SEARCH</strong></span> OUR INVENTORY</h4>
+            </div>
             <div style="background-color:#e0e0e0;padding:5%;">
               <form>
                 <div>
@@ -296,15 +319,14 @@
                     </div>
                   </div>
 
-                  <div class="inventory">
+                  <div class="inventory btn-inventory-container">
                     <button type="button" class="btn btn-danger btn-search-inventory">Reset</button>
-                    <button type="button" class="btn btn-danger btn-search-inventory">Find My New New Vehicle</button>
+                    <button type="button" class="btn btn-danger">Find My New New Vehicle</button>
                   </div>
 
                 </div>
               </form>
             </div>
-          </div>
           </div>
 
         </div>
@@ -312,18 +334,18 @@
     </section>
     
     <section>
-      <div class="row" style="margin:0;">
+      <div class="row" style="margin:0;padding:2px 5%;">
         <div class="col-lg-2 col-md-2 col-sm-4">
           <h5 style="color:#F00;">Recent Vehicles</h5>
           <p>Browse through the vast selection of vehicles that have recently been added to our inventory.</p>
         </div>
-        <div class="col-lg-10 col-md-10 col-sm-8">
+        <div class="col-lg-10 col-md-10 col-sm-8 recent-vehicles">
           <div class="row">
-            <div class="col-lg-2 col-md-2 col-sm-8" style="width: 167px; margin: auto;">
+            <div class="col-lg-2 col-md-2 col-sm-8 recent-vehicles-infor">
               <a href="">
-                <div class="recent-veh-img">
-                  <img src="https://demo.themesuite.com/automotive-wp/wp-content/uploads/2014/10/28-touring-1-167x119.jpg" alt="BMW"  width="167" height="119">
-                  <div>
+                <div class="recent-vehicles-item">
+                  <img src="https://demo.themesuite.com/automotive-wp/wp-content/uploads/2014/10/28-touring-1-167x119.jpg" alt="BMW">
+                  <div style="background-color:#eee">
                     <div><strong>2013 BMW 328i Touring Edition</strong></div>
                     <div>No owners, Brand new</div>
                     <span>$55,000</span>
@@ -332,11 +354,11 @@
               </a>
             </div>
 
-            <div class="col-lg-2 col-md-2 col-sm-8" style="width: 167px; margin: auto;">
+            <div class="col-lg-2 col-md-2 col-sm-8 recent-vehicles-infor">
               <a href="">
-                <div class="recent-veh-img">
-                  <img src="https://demo.themesuite.com/automotive-wp/wp-content/uploads/2014/10/28-touring-1-167x119.jpg" alt="BMW"  width="167" height="119">
-                  <div>
+                <div class="recent-vehicles-item">
+                  <img src="https://demo.themesuite.com/automotive-wp/wp-content/uploads/2014/10/28-touring-1-167x119.jpg" alt="BMW">
+                  <div style="background-color:#eee">
                     <div><strong>2013 BMW 328i Touring Edition</strong></div>
                     <div>No owners, Brand new</div>
                     <span>$55,000</span>
@@ -345,11 +367,11 @@
               </a>
             </div>
 
-            <div class="col-lg-2 col-md-2 col-sm-8" style="width: 167px; margin: auto;">
+            <div class="col-lg-2 col-md-2 col-sm-8 recent-vehicles-infor">
               <a href="">
-                <div class="recent-veh-img">
-                  <img src="https://demo.themesuite.com/automotive-wp/wp-content/uploads/2014/10/28-touring-1-167x119.jpg" alt="BMW"  width="167" height="119">
-                  <div>
+                <div class="recent-vehicles-item">
+                  <img src="https://demo.themesuite.com/automotive-wp/wp-content/uploads/2014/10/28-touring-1-167x119.jpg" alt="BMW">
+                  <div style="background-color:#eee">
                     <div><strong>2013 BMW 328i Touring Edition</strong></div>
                     <div>No owners, Brand new</div>
                     <span>$55,000</span>
@@ -358,11 +380,11 @@
               </a>
             </div>
 
-            <div class="col-lg-2 col-md-2 col-sm-8" style="width: 167px; margin: auto;">
+            <div class="col-lg-2 col-md-2 col-sm-8 recent-vehicles-infor">
               <a href="">
-                <div class="recent-veh-img">
-                  <img src="https://demo.themesuite.com/automotive-wp/wp-content/uploads/2014/10/28-touring-1-167x119.jpg" alt="BMW"  width="167" height="119">
-                  <div>
+                <div class="recent-vehicles-item">
+                  <img src="https://demo.themesuite.com/automotive-wp/wp-content/uploads/2014/10/28-touring-1-167x119.jpg" alt="BMW">
+                  <div style="background-color:#eee">
                     <div><strong>2013 BMW 328i Touring Edition</strong></div>
                     <div>No owners, Brand new</div>
                     <span>$55,000</span>
@@ -371,11 +393,11 @@
               </a>
             </div>
 
-            <div class="col-lg-2 col-md-2 col-sm-8" style="width: 167px; margin: auto;">
+            <div class="col-lg-2 col-md-2 col-sm-8 recent-vehicles-infor">
               <a href="">
-                <div class="recent-veh-img">
-                  <img src="https://demo.themesuite.com/automotive-wp/wp-content/uploads/2014/10/28-touring-1-167x119.jpg" alt="BMW"  width="167" height="119">
-                  <div>
+                <div class="recent-vehicles-item">
+                  <img src="https://demo.themesuite.com/automotive-wp/wp-content/uploads/2014/10/28-touring-1-167x119.jpg" alt="BMW">
+                  <div style="background-color:#eee">
                     <div><strong>2013 BMW 328i Touring Edition</strong></div>
                     <div>No owners, Brand new</div>
                     <span>$55,000</span>
@@ -399,22 +421,22 @@
     </section>
 
     <section>
-      <div class="row" style="margin:0;padding:20px 5%;text-align: center;">
-        <div class="col-lg-2 col-md-6 col-sm-12" style="margin:10px auto auto auto">
+      <div class="row" style="margin:0;padding:20px 5%;text-align:center;">
+        <div class="col-lg-2 col-md-6 col-sm-12 service-item">
           <div>
             <h5>Financing.</h5>
-            <img src="icon-1.PNG" alt="icon-1" height="100px">
+            <img src="icon-1.PNG" alt="icon-1">
           </div>
         </div>
-        <div class="col-lg-2 col-md-6 col-sm-12" style="margin:10px auto auto auto;">
+        <div class="col-lg-2 col-md-6 col-sm-12 service-item">
           <div>
             <h5>Warranty.</h5>
-            <img src="icon-2.PNG" alt="icon-2" height="100px">
+            <img src="icon-2.PNG" alt="icon-2">
           </div>
         </div>
 
-        <div class="col-lg-4 col-md-12 col-sm-12" style="margin:10px auto auto auto;">
-          <div class="row">
+        <div class="col-lg-4 col-md-12 col-sm-12 service-item">
+          <div class="row service-item-timetable">
             <div class="col-12"><h5>What are our Hours of operation?</h5></div>
               <div class="row">
                 <div class="col-lg-6 col-md-6 col-sm-6">
@@ -457,15 +479,15 @@
           </div>
         </div>
 
-        <div class="col-lg-2 col-md-6 col-sm-12" style="margin:10px auto auto auto;">
+        <div class="col-lg-2 col-md-6 col-sm-12 service-item">
           <div>
             <h5>About Us.</h5>
-            <img src="icon-3.PNG" alt="icon-3"  width="px" height="100px">
+            <img src="icon-3.PNG" alt="icon-3">
           </div>
         </div>
-        <div class="col-lg-2 col-md-6 col-sm-12" style="margin:10px auto auto auto;">
+        <div class="col-lg-2 col-md-6 col-sm-12 service-item">
           <div><h5>Find Us.</h5>
-            <img src="icon-4.PNG" alt="icon-4" height="100px">
+            <img src="icon-4.PNG" alt="icon-4">
           </div>
         </div> 
       </div>
@@ -473,39 +495,39 @@
 
     <section style="margin-bottom:0px;">
     <div>
-      <div class="bg-img bg-lanbo">
+      <div class="bg-img">
         <div class="row icon-group">
-            <div class="col-lg-3 col-md-6 col-sm-6 service">
+            <div class="col-lg-3 col-md-6 col-sm-6">
               <div>
-                <img style="max-width: 5rem;" src="icon-1.PNG" alt="icon-1"/>
-                <span style="color:#fff">
+                <img src="icon-1.PNG" alt="icon-1"/>
+                <span>
                   <h1>2000</h1>
                   <p>Cars Sold<p>
                 </span>
               </div>
             </div>
-            <div class="col-lg-3 col-md-6 col-sm-6 service">
+            <div class="col-lg-3 col-md-6 col-sm-6">
               <div>
-                <img style="max-width: 5rem;" src="icon-2.PNG" alt="icon-2"/>
-                <span style="color:#fff">
+                <img src="icon-2.PNG" alt="icon-2"/>
+                <span>
                   <h1>$750,000</h1> 
                   <p>Amount sold</p>
                 </span>
               </div>
             </div>
-            <div class="col-lg-3 col-md-6 col-sm-6 service">
+            <div class="col-lg-3 col-md-6 col-sm-6">
               <div>
-                <img style="max-width: 5rem;" src="icon-3.PNG" alt="icon-3"/>
-                <span style="color:#fff">
+                <img src="icon-3.PNG" alt="icon-3"/>
+                <span>
                   <h1>100%</h1>
                   <p>Customer Satisfaction</p>
                 </span>
               </div>
             </div>
-            <div class="col-lg-3 col-md-6 col-sm-6 service">
+            <div class="col-lg-3 col-md-6 col-sm-6">
               <div>
-                <img style="max-width: 5rem;" src="icon-4.PNG" alt="icon-4"/>
-                <span style="color:#fff">
+                <img src="icon-4.PNG" alt="icon-4"/>
+                <span>
                   <h1>3,600</h1>
                   <p>Oil Change</p>
                 </span>
@@ -517,10 +539,10 @@
     </section>
 
     <section style="margin:0px;">
-      <div class="container-fluid" style="color:#fff">
-        <div class="row footer" style="padding:20px 2%;background-color:#333;opacity: 0.9;">
+      <div class="container-fluid">
+        <div class="row contact">
           <div class="col-lg-4 col-md-6 col-sm-12">
-            <div >
+            <div>
               <h4>Newsletter</h4>
               <p class="newsletter">By subscribing to our company newsletter you will always be up-to-date on our latest promotions, deals and vehicle inventory!</p>
               <div class="newsletter">
@@ -561,8 +583,8 @@
     </section>
 
     <section style="margin:0px;">
-      <div class="container-fluid" style="color:#fff">
-        <div class="row footer" style="background-color:#000;opacity:0.8;">
+      <div class="container-fluid">
+        <div class="row footer">
           <div class="col-lg-4 col-md-4 col-sm-4 logo-footer">
             <div>
               <a href="">
@@ -595,10 +617,10 @@
               </ul>
             </div>
           </div>
-
           
         </div>
       </div>
     </section>
+
   </body>
 </html>
