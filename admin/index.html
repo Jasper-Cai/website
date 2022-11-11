@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"crossorigin="anonymous"/>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+  <style>
+  /** Header **/  
+    .flex-nowrap{width:100%;height:200px;margin:0;background-color:rgb(111, 111, 248);}
+    .sidebar-container{background-color:#fff;}
+    .brand-logo{margin:30px}
+    .nav-sidebar>div{margin:8px auto 8px 8px;}
+    .dropdown>button{margin-left:30px;}
+    .header-container{margin:30px auto;width:100%;}
+    .header-btn-container{display:flex;}
+    .header-btn-container>form{margin-left:10px;}
+    .header-right-container{position:absolute;right:20px}
+    .header-img{margin-left:20px;}
+    
+  </style>
+  </head>
+  <body>
+
+    <header>
+      <nav class="navbar navmenu-fixed-left navbar-light bg-light fixed-top" style="padding:0;">
+        <div class="container-fluid" style="padding:0;">
+          <div class="row flex-nowrap">
+            <div class="col-auto px-0 sidebar-container">
+              <div id="sidebar" class="nav-sidebar collapse collapse-horizontal show border-end list-group min-vh-100">
+                <span class="brand-logo" style="margin:30px">
+                  <a href="index.html"><img src="https://demo.dashboardpack.com/marketing-html/img/logo.png" alt="brand-logo"></a>                   
+                </span>
+                <div class="dropdown">
+                  <button type="button" class="btn btn-light dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Dashboard</button>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item" href="">Marketing</a>
+                    <a class="dropdown-item" href="">Default</a>
+                    <a class="dropdown-item" href="">Dark Menu</a>
+                  </div>
+                </div>
+                <div class="dropdown">
+                  <button type="button" class="btn btn-light dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">App</button>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item" href="">Calender</a>
+                    <a class="dropdown-item" href="">Editor</a>
+                    <a class="dropdown-item" href="">Mail Box</a>
+                    <a class="dropdown-item" href="">Chat</a>
+                    <a class="dropdown-item" href="">FAQ</a>
+                  </div>
+                </div>
+                <div class="dropdown">
+                  <button type="button" class="btn btn-light dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">UI Kits</button>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item" href="">Colors</a>
+                    <a class="dropdown-item" href="">Alerts</a>
+                    <a class="dropdown-item" href="">Buttons</a>
+                  </div>
+                </div>
+                <div class="dropdown">
+                  <button type="button" class="btn btn-light dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Forms</button>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item" href="">Basic Elements</a>
+                    <a class="dropdown-item" href="">Groups</a>
+                    <a class="dropdown-item" href="">Max Length</a>
+                  </div>
+                </div>
+                <div class="dropdown">
+                  <button type="button" class="btn btn-light dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Icons</button>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item" href="">Fontawesome Icon</a>
+                    <a class="dropdown-item" href="">Themefy Icon</a>
+                  </div>
+                </div>
+                <div class="dropdown">
+                  <button type="button" class="btn btn-light dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Animations</button>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item" href="">Animate</a>
+                    <a class="dropdown-item" href="">Scroll Reveal</a>
+                    <a class="dropdown-item" href="">Tilt Animation</a>
+                  </div>
+                </div>
+                <div class="dropdown">
+                  <button type="button" class="btn btn-light dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Components</button>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item" href="">Accordions</a>
+                    <a class="dropdown-item" href="">Scrollable</a>
+                    <a class="dropdown-item" href="">Notification</a>
+                  </div>
+                </div>
+                <div class="dropdown">
+                  <button type="button" class="btn btn-light dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Table</button>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item" href="">Data Tables</a>
+                    <a class="dropdown-item" href="">Bootstrap</a>
+                  </div>
+                </div>
+                <div class="dropdown">
+                  <button type="button" class="btn btn-light dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Cards</button>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item" href="">Basic Card</a>
+                    <a class="dropdown-item" href="">Theme Card</a>
+                    <a class="dropdown-item" href="">Draggable Card</a>
+                  </div>
+                </div>
+                <div class="dropdown">
+                  <button type="button" class="btn btn-light dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Charts</button>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item" href="">ChartJS</a>
+                    <a class="dropdown-item" href="">Apex Charts</a>
+                    <a class="dropdown-item" href="">Chart Sparkline</a>
+                  </div>
+                </div>
+                <div class="dropdown">
+                  <button type="button" class="btn btn-light dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Widgets</button>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item" href="">Chart Boxes</a>
+                    <a class="dropdown-item" href="">Profile Box</a>
+                  </div>
+                </div>
+                <div class="dropdown">
+                  <button type="button" class="btn btn-light dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Maps</button>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item" href="">Maps JS</a>
+                    <a class="dropdown-item" href="">Vector Maps</a>
+                    <a class="dropdown-item" href=""></a>
+                  </div>
+                </div>
+                <div class="dropdown">
+                  <button type="button" class="btn btn-light dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Pages</button>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item" href="">Login</a>
+                    <a class="dropdown-item" href="">Register</a>
+                    <a class="dropdown-item" href="">Forgot Password</a>
+                  </div>
+                </div>
+                
+
+
+
+
+                
+              </div>
+            </div>
+            <div class="header-container">
+              <div class="header-btn-container">
+                <button class="btn btn-outline-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#sidebar" aria-controls="offcanvasNavbar"><span class="navbar-toggler-icon"></span>
+                </button>
+                <form>
+                  <input class="form-control border " type="search" placeholder="Search here..." aria-label="Search">
+                </form>
+
+                <div class="header-right-container">
+                  <button type="button" class="btn"><img src="https://demo.dashboardpack.com/marketing-html/img/icon/bell.svg" alt=""></button>
+                  <button type="button" class="btn"><img src="https://demo.dashboardpack.com/marketing-html/img/icon/msg.svg" alt=""></button>
+                  <span class="header-img"><img src="https://demo.dashboardpack.com/marketing-html/img/client_img.png" alt=""></span>
+                </div>
+              </div>
+                
+              
+
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    
+    
+  </body>
+</html>
