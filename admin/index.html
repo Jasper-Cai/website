@@ -4,162 +4,169 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Sidebar Layout</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"crossorigin="anonymous"/>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
   <style>
-    body{overflow-y:auto;}
-  /** Header **/  
-    header{position:relative;z-index:-1;}
-    .flex-nowrap{width:100%;height:200px;margin:0;background-color:rgb(111, 111, 248);}
-    .sidebar-container{background-color:#fff;}
-    .brand-logo{margin:30px}
-    .nav-sidebar>div{margin:8px auto 8px 8px;}
-    .dropdown>button{margin-left:30px;}
-    .header-container{margin:30px auto;width:100%;}
-    #sidebar{height:100vh;overflow-y:auto;}
-    .header-btn-container{display:flex;}
-    .header-btn-container>form{margin-left:10px;}
-    .header-right-container{position:absolute;right:20px}
-    .header-img{margin-left:20px;}
-  /** Main Content **/
-  /** Main Content **/
-    .main-container{margin:120px 30px 0 30px;padding:40px 30px;background-color:#eee}
-    .main-content h6{color:#888}
-    .bg-container{background-color:#FFF;border-radius:10px;height:120px;margin:10px auto;padding:10px;}
-    .bg-container p{color:#888;}
-    .first-four-cards{margin-bottom:30px;}
-    .white-card{background-color:#FFF;border-radius:10px;min-height:500px;margin-bottom:30px;}
-    .white-card-header{padding:20px 40px;}
-  /** Footer **/
-    .footer{margin:20px auto 40px auto;}
-    .footer-content{text-align:center;color:#888}
-    .footer-content a{color:#888;text-decoration:none;}
-  </style>
-  </head>
-  <body>
-
+      body{overflow-y:auto;}
+    /** SideBar **/
+			#sidebar {position:absolute;top:0px;left:-200px;width:200px;height:100%;z-index:4;transition:left 1s;overflow-y:auto;}
+      .brand-logo{margin:20px}
+      .brand-logo img{width:150px;height:auto;background-size:cover;background-position:center center;}
+      .dropdown{margin:10px auto 10px 30px;}
+    /** Main **/
+			#main{position:absolute;top:0px;left:0px;width:100%;height:auto;transition:left 1s;}
+    /** Header **/
+			#header {position:relative;width:100%;height:200px;background-color:rgb(111, 111, 248);border-radius:10px;z-index:2;}
+      .header-btn-container{display:flex;}
+      .header-btn-container>form{margin:10px 0 0 10px;}
+      .header-right-container{position:absolute;right:20px;margin-top:5px}
+      .header-img{margin-left:20px;}
+    /** Main Content **/
+      .main-content{position:absolute;top:120px;margin:0px 30px;padding:40px 30px;background-color:#eee;border-radius:10px;z-index:3;}
+      .main-content h6{color:#888}
+      .bg-container{background-color:#FFF;border-radius:10px;height:120px;margin:10px auto;padding:10px;}
+      .bg-container p{color:#888;}
+      .first-four-cards{margin-bottom:30px;}
+      .white-card{background-color:#FFF;border-radius:10px;min-height:500px;margin-bottom:30px;}
+      .white-card-header{padding:20px 40px;}
+    /** Footer **/
+			#footer{position:fixed;width:100%;height:auto;bottom:0px;margin:20px auto 0px auto;text-align:center;color:#888;z-index:6;}
+      #footer a{color:#888;text-decoration:none;}
+	</style>
+  <script>
+			function toggleMenu(){
+				var sidebarLeft =  document.getElementById("sidebar").style.left;
+				if(sidebarLeft == "-200px"){
+					document.getElementById("sidebar").style.left = "0px";	
+					document.getElementById("main").style.left = "200px";	
+				}else{
+					document.getElementById("sidebar").style.left = "-200px";
+					document.getElementById("main").style.left = "0px";	
+				}
+			}
+			
+	</script>
+</head>
+<body>
   
-    <header>
-      <nav class="navbar navmenu-fixed-left navbar-light bg-light fixed-top" style="padding:0;">
-        <div class="container-fluid" style="padding:0;">
-          <div class="row flex-nowrap rounded">
-            <div class="col-auto px-0 sidebar-container">
-              <div id="sidebar" class="nav-sidebar collapse collapse-horizontal show border-end list-group ">
-                <span class="brand-logo" style="margin:30px">
-                  <a href="index.html"><img src="https://demo.dashboardpack.com/marketing-html/img/logo.png" alt="brand-logo"></a>                   
-                </span>
-                <div class="dropdown">
-                  <button type="button" class="btn btn-light dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Dashboard</button>
+		<div id="sidebar">
+      <div class="nav-sidebar list-group">
+        <span class="brand-logo">
+          <a href="index.html"><img src="https://demo.dashboardpack.com/marketing-html/img/logo.png" alt="brand-logo"><a>                   
+        </span>
+        <div class="dropdown">
+          <button type="button" class="btn btn-light dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Dashboard</button>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="">Marketing</a>
+            <a class="dropdown-item" href="">Default</a>
+            <a class="dropdown-item" href="">Dark Menu</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button type="button" class="btn btn-light dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">App</button>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="">Calender</a>
+            <a class="dropdown-item" href="">Editor</a>
+            <a class="dropdown-item" href="">Mail Box</a>
+            <a class="dropdown-item" href="">Chat</a>
+            <a class="dropdown-item" href="">FAQ</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button type="button" class="btn btn-light dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">UI Kits</button>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="">Colors</a>
+            <a class="dropdown-item" href="">Alerts</a>
+            <a class="dropdown-item" href="">Buttons</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button type="button" class="btn btn-light dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Forms</button>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="">Basic Elements</a>
+            <a class="dropdown-item" href="">Groups</a>
+            <a class="dropdown-item" href="">Max Length</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button type="button" class="btn btn-light dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Icons</button>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="">Fontawesome Icon</a>
+            <a class="dropdown-item" href="">Themefy Icon</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button type="button" class="btn btn-light dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Animations</button>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="">Animate</a>
+            <a class="dropdown-item" href="">Scroll Reveal</a>
+            <a class="dropdown-item" href="">Tilt Animation</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button type="button" class="btn btn-light dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Components</button>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="">Accordions</a>
+            <a class="dropdown-item" href="">Scrollable</a>
+            <a class="dropdown-item" href="">Notification</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button type="button" class="btn btn-light dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Table</button>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="">Data Tables</a>
+            <a class="dropdown-item" href="">Bootstrap</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button type="button" class="btn btn-light dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Cards</button>
                   <div class="dropdown-menu">
-                    <a class="dropdown-item" href="">Marketing</a>
-                    <a class="dropdown-item" href="">Default</a>
-                    <a class="dropdown-item" href="">Dark Menu</a>
-                  </div>
-                </div>
-                <div class="dropdown">
-                  <button type="button" class="btn btn-light dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">App</button>
-                  <div class="dropdown-menu">
-                    <a class="dropdown-item" href="">Calender</a>
-                    <a class="dropdown-item" href="">Editor</a>
-                    <a class="dropdown-item" href="">Mail Box</a>
-                    <a class="dropdown-item" href="">Chat</a>
-                    <a class="dropdown-item" href="">FAQ</a>
-                  </div>
-                </div>
-                <div class="dropdown">
-                  <button type="button" class="btn btn-light dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">UI Kits</button>
-                  <div class="dropdown-menu">
-                    <a class="dropdown-item" href="">Colors</a>
-                    <a class="dropdown-item" href="">Alerts</a>
-                    <a class="dropdown-item" href="">Buttons</a>
-                  </div>
-                </div>
-                <div class="dropdown">
-                  <button type="button" class="btn btn-light dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Forms</button>
-                  <div class="dropdown-menu">
-                    <a class="dropdown-item" href="">Basic Elements</a>
-                    <a class="dropdown-item" href="">Groups</a>
-                    <a class="dropdown-item" href="">Max Length</a>
-                  </div>
-                </div>
-                <div class="dropdown">
-                  <button type="button" class="btn btn-light dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Icons</button>
-                  <div class="dropdown-menu">
-                    <a class="dropdown-item" href="">Fontawesome Icon</a>
-                    <a class="dropdown-item" href="">Themefy Icon</a>
-                  </div>
-                </div>
-                <div class="dropdown">
-                  <button type="button" class="btn btn-light dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Animations</button>
-                  <div class="dropdown-menu">
-                    <a class="dropdown-item" href="">Animate</a>
-                    <a class="dropdown-item" href="">Scroll Reveal</a>
-                    <a class="dropdown-item" href="">Tilt Animation</a>
-                  </div>
-                </div>
-                <div class="dropdown">
-                  <button type="button" class="btn btn-light dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Components</button>
-                  <div class="dropdown-menu">
-                    <a class="dropdown-item" href="">Accordions</a>
-                    <a class="dropdown-item" href="">Scrollable</a>
-                    <a class="dropdown-item" href="">Notification</a>
-                  </div>
-                </div>
-                <div class="dropdown">
-                  <button type="button" class="btn btn-light dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Table</button>
-                  <div class="dropdown-menu">
-                    <a class="dropdown-item" href="">Data Tables</a>
-                    <a class="dropdown-item" href="">Bootstrap</a>
-                  </div>
-                </div>
-                <div class="dropdown">
-                  <button type="button" class="btn btn-light dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Cards</button>
-                  <div class="dropdown-menu">
-                    <a class="dropdown-item" href="">Basic Card</a>
-                    <a class="dropdown-item" href="">Theme Card</a>
-                    <a class="dropdown-item" href="">Draggable Card</a>
-                  </div>
-                </div>
-                <div class="dropdown">
-                  <button type="button" class="btn btn-light dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Charts</button>
-                  <div class="dropdown-menu">
-                    <a class="dropdown-item" href="">ChartJS</a>
-                    <a class="dropdown-item" href="">Apex Charts</a>
-                    <a class="dropdown-item" href="">Chart Sparkline</a>
-                  </div>
-                </div>
-                <div class="dropdown">
-                  <button type="button" class="btn btn-light dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Widgets</button>
-                  <div class="dropdown-menu">
-                    <a class="dropdown-item" href="">Chart Boxes</a>
-                    <a class="dropdown-item" href="">Profile Box</a>
-                  </div>
-                </div>
-                <div class="dropdown">
-                  <button type="button" class="btn btn-light dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Maps</button>
-                  <div class="dropdown-menu">
-                    <a class="dropdown-item" href="">Maps JS</a>
-                    <a class="dropdown-item" href="">Vector Maps</a>
-                    <a class="dropdown-item" href=""></a>
-                  </div>
-                </div>
-                <div class="dropdown">
-                  <button type="button" class="btn btn-light dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Pages</button>
-                  <div class="dropdown-menu">
-                    <a class="dropdown-item" href="">Login</a>
-                    <a class="dropdown-item" href="">Register</a>
-                    <a class="dropdown-item" href="">Forgot Password</a>
-                  </div>
-                </div>
-                 
-              </div>
-            </div>
-
-            <div class="header-container">
+            <a class="dropdown-item" href="">Basic Card</a>
+            <a class="dropdown-item" href="">Theme Card</a>
+            <a class="dropdown-item" href="">Draggable Card</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button type="button" class="btn btn-light dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Charts</button>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="">ChartJS</a>
+            <a class="dropdown-item" href="">Apex Charts</a>
+            <a class="dropdown-item" href="">Chart Sparkline</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button type="button" class="btn btn-light dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Widgets</button>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="">Chart Boxes</a>
+            <a class="dropdown-item" href="">Profile Box</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button type="button" class="btn btn-light dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Maps</button>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="">Maps JS</a>
+            <a class="dropdown-item" href="">Vector Maps</a>
+            <a class="dropdown-item" href=""></a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button type="button" class="btn btn-light dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Pages</button>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="">Login</a>
+            <a class="dropdown-item" href="">Register</a>
+            <a class="dropdown-item" href="">Forgot Password</a>
+          </div>
+        </div>
+                
+      </div>
+    </div>
+    
+		  <div id="main">
+		  	<div id="header">
+          <div class="header-container">
               <div class="header-btn-container">
-                <button class="btn btn-outline-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#sidebar" aria-controls="offcanvasNavbar"><span class="navbar-toggler-icon"></span>
-                </button>
+                <button type="button" class="btn btn-outline-light" style="float:left;margin:10px 0 0 10px;" onclick="toggleMenu()">Menu</button>
                 <form>
                   <input class="form-control rounded-pill" type="search" placeholder="Search here..." aria-label="Search">
                 </form>
@@ -171,149 +178,137 @@
                 </div>
               </div>                              
             </div>
+		  	</div>
 
-          </div>
+       <div class="main-content">
+         <div class="container-fluid">
+           <div class="row">
+
+             <div class="col-lg-12">   
+               <div class="row first-four-cards">
+                 <div class="col-6 col-xl-3">
+                   <div class="bg-container">
+                     <p>Revenue</p>
+                     <h3>$ 35000</h3>
+                   </div>
+                 </div>
+                 <div class="col-6 col-xl-3">
+                   <div class="bg-container">
+                     <p>Revenue</p>
+                     <h3>$ 35000</h3>
+                   </div>
+                 </div>
+                 <div class="col-6 col-xl-3">
+                   <div class="bg-container">
+                     <p>Revenue</p>
+                     <h3>$ 35000</h3>
+                   </div>
+                 </div>
+                 <div class="col-6 col-xl-3">
+                   <div class="bg-container">
+                     <p>Revenue</p>
+                     <h3>$ 35000</h3>
+                   </div>
+                 </div>
+               </div>
+             </div>
+
+             <div class="col-md-8">
+               <div class="white-card">
+                 <div class="white-card-header">
+                   <div>
+                     <h6>Payment History</h6>
+                   </div>
+                 </div>
+                 <hr style="margin:0;">
+                 <div class="white-card-body"></div>
+               </div>
+             </div>
+
+             <div class="col-md-4">
+               <div class="white-card">
+                 <div class="white-card-header">
+                   <div>
+                     <h6>1 United States Dollar Equals</h6>
+                   </div>
+                 </div>
+                 <hr style="margin:0;">
+                 <div class="white-card-body"></div>
+               </div>
+             </div>
+
+             <div class="col-md-6">
+               <div class="white-card">
+                 <div class="white-card-header">
+                   <div>
+                     <h6>Payment History</h6>
+                   </div>
+                 </div>
+                 <hr style="margin:0;">
+                 <div class="white-card-body"></div>
+               </div>
+               <div class="white-card">
+                 <div class="white-card-header">
+                   <div>
+                     <h6>Monthly Invoices</h6>
+                   </div>
+                 </div>
+                 <hr style="margin:0;">
+                 <div class="white-card-body"></div>
+               </div>
+             </div>
+
+             <div class="col-md-6">
+               <div class="white-card" style="min-height:650px;">
+                 <div class="white-card-header">
+                   <div>
+                     <h6>Social Media</h6>
+                   </div>
+                 </div>
+                 <hr style="margin:0;">
+                 <div class="white-card-body"></div>
+               </div>
+                <div class="white-card" style="min-height:300px;">
+                 <div class="white-card-header">
+                   <div>
+                     <h6>Recent Activity</h6>
+                   </div>
+                 </div>
+                 <hr style="margin:0;">
+                 <div class="white-card-body"></div>
+               </div>
+               <div class="white-card" style="min-height:400px;">
+                 <div class="white-card-header">
+                    <div>
+                     <h6>Recent Activity</h6>
+                   </div>
+                 </div>
+                 <hr style="margin:0;">
+                 <div class="white-card-body"></div>
+               </div>
+             </div>
+
+             <div class="col-md-12">
+               <div class="white-card">
+                 <div class="white-card-header">
+                   <div>
+                     <h6>Monthly Invoices</h6>
+                   </div>
+                 </div>
+                 <hr style="margin:0;">
+                 <div class="white-card-body"></div>
+               </div>
+             </div>
+
+           </div>
+         </div>
+       </div>
+
+        <div id="footer">
+          <button type="button" class="btn btn-outline-dark" style="float:left;margin-left:10px;" onclick="toggleMenu()">Menu</button>
+          <span>2020 © Influence - Designed by<a href=""> Dashboard</a></span>  
         </div>
-      </nav>
-    </header>
-
-    <div class="main-container rounded">
-      <div class="main-content">
-        <div class="container-fluid">
-          <div class="row">
-
-            <div class="col-lg-12">   
-              <div class="row first-four-cards">
-                <div class="col-6 col-xl-3">
-                  <div class="bg-container">
-                    <p>Revenue</p>
-                    <h3>$ 35000</h3>
-                  </div>
-                </div>
-                <div class="col-6 col-xl-3">
-                  <div class="bg-container">
-                    <p>Revenue</p>
-                    <h3>$ 35000</h3>
-                  </div>
-                </div>
-                <div class="col-6 col-xl-3">
-                  <div class="bg-container">
-                    <p>Revenue</p>
-                    <h3>$ 35000</h3>
-                  </div>
-                </div>
-                <div class="col-6 col-xl-3">
-                  <div class="bg-container">
-                    <p>Revenue</p>
-                    <h3>$ 35000</h3>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-md-8">
-              <div class="white-card">
-                <div class="white-card-header">
-                  <div>
-                    <h6>Payment History</h6>
-                  </div>
-                </div>
-                <hr style="margin:0;">
-                <div class="white-card-body"></div>
-              </div>
-            </div>
-
-            <div class="col-md-4">
-              <div class="white-card">
-                <div class="white-card-header">
-                  <div>
-                    <h6>1 United States Dollar Equals</h6>
-                  </div>
-                </div>
-                <hr style="margin:0;">
-                <div class="white-card-body"></div>
-              </div>
-            </div>
-
-            <div class="col-md-6">
-              <div class="white-card">
-                <div class="white-card-header">
-                  <div>
-                    <h6>Payment History</h6>
-                  </div>
-                </div>
-                <hr style="margin:0;">
-                <div class="white-card-body"></div>
-              </div>
-              <div class="white-card">
-                <div class="white-card-header">
-                  <div>
-                    <h6>Monthly Invoices</h6>
-                  </div>
-                </div>
-                <hr style="margin:0;">
-                <div class="white-card-body"></div>
-              </div>
-            </div>
-
-            <div class="col-md-6">
-              <div class="white-card" style="min-height:650px;">
-                <div class="white-card-header">
-                  <div>
-                    <h6>Social Media</h6>
-                  </div>
-                </div>
-                <hr style="margin:0;">
-                <div class="white-card-body"></div>
-              </div>
-              <div class="white-card" style="min-height:300px;">
-                <div class="white-card-header">
-                  <div>
-                    <h6>Recent Activity</h6>
-                  </div>
-                </div>
-                <hr style="margin:0;">
-                <div class="white-card-body"></div>
-              </div>
-              <div class="white-card" style="min-height:400px;">
-                <div class="white-card-header">
-                  <div>
-                    <h6>Recent Activity</h6>
-                  </div>
-                </div>
-                <hr style="margin:0;">
-                <div class="white-card-body"></div>
-              </div>
-            </div>
-
-            <div class="col-md-12">
-              <div class="white-card">
-                <div class="white-card-header">
-                  <div>
-                    <h6>Monthly Invoices</h6>
-                  </div>
-                </div>
-                <hr style="margin:0;">
-                <div class="white-card-body"></div>
-              </div>
-            </div>
-
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="footer">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-lg-12">
-            <div class="footer-content">
-              <p>2020 © Influence - Designed by<a href=""> Dashboard</a></p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-  </body>
-</html>
+      
+		  </div>
+</body>
+<html>
