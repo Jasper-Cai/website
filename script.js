@@ -17,7 +17,7 @@ var indexSectionTwo=[
         "describe":"Sea veniam lucilius neglegentur ad, an per sumo volum voluptatibus. Qui cu everti repudiare. Eam ut cibo nobis aperiam, elit qualisque at cum. Possit antiopam id est. Illud delicata ea mel, sed novum mucius id. Nullam qua."
      }
 ]
-function home_top_threeimage(){
+function home_top_threeImage(){
     let outHtml = "";
     for(let i = 0; i < indexSectionTwo.length; i++){
         outHtml += '<div><div class="column product_preview_item">';
@@ -95,7 +95,7 @@ var indexSectionFive=[
         "price":"$55,000"
      }
 ]
-function home_middle_fiveimage(){
+function home_middle_fiveImage(){
     let outHtml="";
     outHtml+=' <div class="col-lg-2 col-md-2 col-sm-4">';
     outHtml+=' <h5 style="color:#F00;">Recent Vehicles</h5>';
@@ -157,14 +157,14 @@ function home_bottom_feature(){
 
 document.addEventListener("readystatechange",function(event){
     if(event.target.readyState == "interactive"){
-        if(document.getElementById("home_top_threeimage")!= null){
-            document.getElementById("home_top_threeimage").innerHTML = home_top_threeimage();
+        if(document.getElementById("home_top_threeImage")!= null){
+            document.getElementById("home_top_threeImage").innerHTML = home_top_threeImage();
         }
         if(document.getElementById("home_middle_feature")!= null){
             document.getElementById("home_middle_feature").innerHTML = home_middle_feature();
         }
-        if(document.getElementById("home_middle_fiveimage")!= null){
-            document.getElementById("home_middle_fiveimage").innerHTML = home_middle_fiveimage();
+        if(document.getElementById("home_middle_fiveImage")!= null){
+            document.getElementById("home_middle_fiveImage").innerHTML = home_middle_fiveImage();
         }
         if(document.getElementById("home_bottom_feature")!= null){
             document.getElementById("home_bottom_feature").innerHTML = home_bottom_feature();
