@@ -1,0 +1,33 @@
+    section{margin:50px 0;}
+    /*Heading*/
+      .header{position:fixed;top:0px;left:0px;width:100%;min-height:50px;background-color:#000;opacity:0.7;padding:20px;z-index:100;}
+      .bottom-header{position:fixed;top:0px;left:0px;width:100%;min-height:50px;margin-top:70px;z-index:100;}
+      .btn-group{margin: auto;}
+    /*Section one*/
+      .first-heading{position: relative;top:60%;margin:0 5%;color:#FFF}
+      .bg-img{width: 100%;height: 300px;background-image: url('https://demo.themesuite.com/automotive-wp/wp-content/uploads/2014/09/dynamic-header-13.jpg');background-size: cover;background-position: center center;}
+    /*Section two*/
+      .my-dropdown{display:inline-block;padding:5px;}
+      .sort-by{text-align:center;line-height:50px;padding:5px;}
+    /*Section Three*/
+      .inventory{margin:10px auto;padding:12px;position:relative;}
+      .margin-bottom-20{margin-bottom:20px;}
+      .title{font-size:20px;}
+      .checkbox{position:absolute;top:3px;right:5px}
+      .vehicle-detail{font-weight:bold;}
+      .spec{padding-left:5px;}
+      .btn-details{display:flex;float:right;}
+      /*Section Nine*/
+        .contact{padding:20px 2%;background-color:#333;opacity:0.9;color:#fff}
+        .contact h4{margin-bottom:20px;}
+        .contact a{color:#fff;text-decoration:none;}
+        .contact>div{margin:10px 0;}
+        .newsletter{padding:8px}
+        .twitter-feed{padding:8px}
+        .contact-us{padding:8px;}
+      /*Section Footer*/
+        .footer{background-color:#000;opacity:0.8;color:#fff}
+        .footer a{color:#fff;text-decoration:none;}
+        .footer>div{margin:20px 0;}
+        .logo-footer>div{margin:auto 5%;padding:8px;}
+        .menu-item{display:inline-block;;padding:8px}
