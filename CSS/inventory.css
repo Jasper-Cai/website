@@ -5,7 +5,7 @@
       .btn-group{margin: auto;}
     /*Section one*/
       .first-heading{position: relative;top:60%;margin:0 5%;color:#FFF}
-      .bg-img{width: 100%;height: 300px;background-image: url('https://demo.themesuite.com/automotive-wp/wp-content/uploads/2014/09/dynamic-header-13.jpg');background-size: cover;background-position: center center;}
+      .bg-img{width: 100%;height: 300px;background-image: url('/image/inventory-bg.jpg');background-size: cover;background-position: center bottom;}
     /*Section two*/
       .my-dropdown{display:inline-block;padding:5px;}
       .sort-by{text-align:center;line-height:50px;padding:5px;}

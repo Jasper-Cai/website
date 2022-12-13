@@ -5,7 +5,7 @@
         .btn-group{margin:auto;}
       /*Section one*/
         .first-heading{position:relative;top:20%;left:5%;width:max-content}
-        .bg-img{width:100%;height:500px;background-image: url('https://www.topgear.com/sites/default/files/2021/11/PCGB21_1364_fine.jpg');background-size: cover;background-position: center center;}
+        .bg-img{width:100%;height:500px;background-image:url('/image/lianxin.png');background-size: cover;background-position: center center;}
       /*Section two*/
         .product_preview{display:flex;width:100%;padding:20px 5%}
         .product_preview>div{flex:1;margin:20px}
@@ -38,7 +38,7 @@
         .service-item img{height:100px}
         .service-item-timetable{margin:auto;max-width:500px;}
       /*Section Eight*/
-        .bottom-bg-img{background-image:url(https://i.pinimg.com/originals/95/6a/55/956a55e67f140aa6080beb4941a799af.jpg);background-position: center center;background-size:cover;height:auto;width:100%;padding:80px;}
+        .bottom-bg-img{background-image:url('/image/publicity-img.jpg');background-position: center center;background-size:cover;height:auto;width:100%;padding:80px;}
         .icon-group{text-align:center;vertical-align:middle;}
         .icon-group img{max-width:5rem;}
         .icon-group span{color:#fff}
