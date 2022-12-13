@@ -1,3 +1,21 @@
+
+function initial_load() {
+    //var inventorySectionX = 5
+    //let HTML = render_f(inventorySectionX)
+    //alert(HTML)
+    var inventorySectionThree = []
+    let html = render_inventory(inventorySectionThree)
+    document.getElementById("inventory_container").innerHTML = html;
+    $.ajax({
+        url: "https://www.lzlianxin.com/feed.php?CZX_coupon=100",
+        success: function (result) {
+            var inventorySectionThree = JSON.parse(result)
+            let html = render_inventory(inventorySectionThree)
+            document.getElementById("inventory_container").innerHTML = html;
+        }
+    })
+}
+
 /* index js */
 
 var indexSectionTwo=[
@@ -104,7 +122,6 @@ function home_middle_fiveImage(){
     outHtml+=' <div class="col-lg-10 col-md-10 col-sm-8 recent-vehicles">';
     outHtml+=' <div class="row">';
     for(let i = 0;i < indexSectionFive.length; i++){
-      //  console.log(listThreeImage[i].ImageUrl);
         outHtml+=' <div class="col-lg-2 col-md-2 col-sm-8 recent-vehicles-infor">';
         outHtml+=' <a href="">';
         outHtml+=' <div class="recent-vehicles-item">';
@@ -279,7 +296,7 @@ var ourTeamSectionThree = [
 ]
 function OurTeam_fourImage(){
     let outHtml = "";
-    for(let i = 0; i < ourTeamSectionTwo.length; i++){
+    for(let i = 0; i < ourTeamSectionThree.length; i++){
         outHtml += '<div class="column col-sm-12 col-md-6 col-lg-3 col-xl-3 sales-infor">';
         outHtml += '<div class="sales-infor-img">';
         outHtml += '<img src="'+ourTeamSectionThree[i].imageUrl+'" alt="William Dean" height="200">';
@@ -316,3 +333,65 @@ document.addEventListener("readystatechange",function(event){
         }
     }
 })
+
+
+/* Inventory js */
+function render_f(item) {
+    return "<div>"+item+"</div>"
+}
+function render_inventory(inventories){
+    let outHtml = "";
+    for (let i = 0; i < inventories.length; i++){
+        outHtml += `
+            <div class=" col-xl-3 col-lg-4 col-md-6 col-sm-12 col-xs-12 ">
+            <div class="inventory border border-secondary rounded-3">
+                <div class="margin-bottom-20">
+                <div class="title">${inventories[i].title}</div>
+                <div class="checkbox"><input class="form-check-input" type="checkbox"></div>
+                </div>
+                <img src="${inventories[i].carImageUrl}" alt="Porsche" width="200" height="150">
+                <table>
+                <tbody>
+                    <tr>
+                    <td class="vehicle-detail">Body Style:</td>
+                    <td class="spec">Convertible</td>
+                    </tr>
+                    <tr>
+                    <td class="vehicle-detail">Mileage:</td>
+                    <td class="spec">126273</td>
+                    </tr>
+                    <tr>
+                    <td class="vehicle-detail">Transmission:</td>
+                    <td class="spec">5-Speed Manual</td>
+                    </tr>
+                    <tr>
+                    <td class="vehicle-detail">Drivetrain:</td>
+                    <td class="spec">RWD</td>
+                    </tr>
+                    <tr>
+                    <td class="vehicle-detail">Engine :</td>
+                    <td class="spec">2.9L Mid-Engine V6</td>
+                    </tr>
+                </tbody>
+                </table>
+                <div>
+                <div style="float:left;margin-right:20px;">
+                    <img src="https://demo.themesuite.com/automotive-wp/wp-content/uploads/2014/09/carfax1.png" alt="CARFAX" class="carfax-logo">
+                </div>
+
+                <div class="margin-bottom-20">
+                    <b>Price :</b>
+                    <div class="figure">
+                    <h3>$19,995</h3>
+                    </div>
+                    <div><em>Plus Sales Tax</em></div>
+                </div>
+                </div>
+                <button type="button" class="btn btn-sm btn-outline-secondary">View Video</button>
+                <button type="button" class="btn btn-sm btn-outline-secondary btn-details">View Details</button>
+            </div>
+            </div>
+        `;  
+    }
+    return outHtml;
+}
