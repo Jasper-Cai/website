@@ -13,19 +13,13 @@
         .manager-infor h4{padding: 5px 0 5px 0;}
         .manager-infor div{padding:8px;line-height:30px;}
         .manager-infor{padding:0 5px}
-        .manager-infor>h5{color:#f00;margin-bottom:60px;}
-        .manager-img>img {width:100%;max-width:300px;}
-        .manager-img{text-align:center;}
+        .manager-infor>h3{color:#f00;margin-bottom:60px;}
       /*Section Three*/
-        .sales-detail{width:100%;height:auto}
-        .sales-detail>div{padding:10px}
+        .sales-detail{width:100%;height:auto;margin:0 auto;}
+        .sales-detail>div{padding:10px} 
         .sales-infor h4{padding: 5px 0 5px 0;}
         .sales-infor div{padding:8px;line-height:30px;}
         .sales-infor{padding:0 5px;}
-        .sales-infor>h5{color:#f00;margin-bottom: 60px;}
-        .sales-infor-img>img {width:100%;max-width:300px;}
-        .sales-infor-img{text-align:center;}
-        .email{overflow:auto;}
       /*Section Four*/
         .inventory{padding:8px;}
         .inventory-col{padding:4px;}
