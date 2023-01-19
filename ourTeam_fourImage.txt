@@ -1,0 +1,30 @@
+[
+    {
+        "imageUrl": "/image/Sales-Director.png",
+        "name": "蔡学武",
+        "position": "销售总监",
+        "weChat": "WATLP1314",
+        "telephone": "15228471777"
+    },
+    {
+        "imageUrl": "/image/Sales-Manager.png",
+        "name": "刘道均",
+        "position": "销售经理",
+        "weChat": "ldjzw22",
+        "telephone": "13882730173"
+    },
+    {
+        "imageUrl": "/image/Salesman-Zhang.png",
+        "name": "张浩",
+        "position": "销售员",
+        "weChat": "zhanghao0467555",
+        "telephone": "18181869175"
+    },
+    {
+        "imageUrl": "/image/Salesman-Yang.png",
+        "name": "杨浩",
+        "position": "销售员",
+        "weChat": "ELW977",
+        "telephone": "18808300101"
+    }
+]

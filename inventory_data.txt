@@ -1,7 +1,7 @@
 [
         {
             "title": "GTL长车身高顶标准地板",
-            "carImageUrl": "/image/GTL长车身高顶标准地板.png",
+            "carImageUrl": "/image/GTLChangCheShenGaoDingBiaoZhunDiBan.png",
             "rearAxle": "后桥: ",
             "rac": "10t（440）后桥，进口轮毂单元，2.846自调臂ABS",
             "wheelBase": "轴距: ",
@@ -17,11 +17,12 @@
             "pc": "$19,995",
             "tax": "Plus Sales Tax",
             "cardBtnLeft": "View Video",
-            "cardBtnRight":"View Details"
+            "cardBtnRight":"View Details",
+            "id":"lz01"
         },
         {
             "title": "EST长车身高顶高地板",
-            "carImageUrl": "/image/EST长车身高顶高地板.jpg",
+            "carImageUrl": "/image/ESTChangCheShenGaoDingGaoDiBan.jpg",
             "rearAxle": "后桥: ",
             "rac": "10t（440）后桥，进口轮毂单元，2.846自调臂ABS",
             "wheelBase": "轴距: ",
@@ -37,11 +38,12 @@
             "pc": "$19,995",
             "tax": "Plus Sales Tax",
             "cardBtnLeft": "View Video",
-            "cardBtnRight":"View Details"
+            "cardBtnRight":"View Details",
+            "id":"lz02"
         },
         {
             "title": "EST-N超长车身高顶高地板",
-            "carImageUrl": "/image/EST-N超长车身高顶高地板.jpg",
+            "carImageUrl": "/image/EST-NChaoChangCheShenGaoDingGaoDiBan.jpg",
             "rearAxle": "后桥: ",
             "rac": "10t（440）后桥，进口轮毂单元，3.7自调臂ABS",
             "wheelBase": "轴距: ",
@@ -57,11 +59,12 @@
             "pc": "$19,995",
             "tax": "Plus Sales Tax",
             "cardBtnLeft": "View Video",
-            "cardBtnRight":"View Details"
+            "cardBtnRight":"View Details",
+            "id":"lz03"
         },
         {
             "title": "银河高地板",
-            "carImageUrl": "/image/银河高地板.jpg",
+            "carImageUrl": "/image/YinHeGaoDiBan.jpg",
             "rearAxle": "后桥: ",
             "rac": "10t（440）后桥，进口轮毂单元，2.846自调臂ABS",
             "wheelBase": "轴距: ",
@@ -77,11 +80,12 @@
             "pc": "$19,995",
             "tax": "Plus Sales Tax",
             "cardBtnLeft": "View Video",
-            "cardBtnRight":"View Details"
+            "cardBtnRight":"View Details",
+            "id":"lz04"
         },
                 {
             "title": "GTL-C标准地板",
-            "carImageUrl": "/image/GTL-C标准地板.png",
+            "carImageUrl": "/image/GTL-CBiaoZhunDiBan.png",
             "rearAxle": "后桥: ",
             "rac": "10t（440）后桥，进口轮毂单元，2.846自调臂ABS",
             "wheelBase": "轴距: ",
@@ -97,6 +101,6 @@
             "pc": "$19,995",
             "tax": "Plus Sales Tax",
             "cardBtnLeft": "View Video",
-            "cardBtnRight":"View Details"
+            "id":"lz05"
         }
     ]

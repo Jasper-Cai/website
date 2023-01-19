@@ -1,0 +1,23 @@
+[
+    {
+        "imageUrl": "/image/General-Manager.png",
+        "name": "蔡学文",
+        "position": "总经理",
+        "workPhone": "J8161998",
+        "telephone": "15082075999"
+    },
+    {
+        "imageUrl": "/image/CFO.png",
+        "name": "许毓飞",
+        "position": "财务总监",
+        "workPhone": "xyf15082075999",
+        "telephone": "15082075999"
+    },
+    {
+        "imageUrl": "/image/Financial-Manager.png",
+        "name": "欧黎丽",
+        "position": "金融经理",
+        "workPhone": "ouyan3105",
+        "telephone": "18281166652"
+    }
+]

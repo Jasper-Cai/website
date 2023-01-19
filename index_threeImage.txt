@@ -1,0 +1,17 @@
+  [
+        {
+            "imageUrl" :"/image/home-sample1.jpg",
+            "title":"更成熟",
+            "describe":"欧曼专属定制福康A系列国六动力。 B10寿命行业最长180万公里！"
+        },
+        {
+            "imageUrl" :"/image/home-sample2.jpg",
+            "title":"更节油",
+            "describe":"更节油国六重卡，具有行业最优油品适应性！ 1年省3万，三年省10万！ "
+        },
+        {
+            "imageUrl" :"/image/home-sample3.jpg",
+            "title":"更智能",
+            "describe":"动力与整车系统智能管理。 创新预见性服务：行内唯一实现OTA远程系统升级与故障预警！"
+        }
+  ]
