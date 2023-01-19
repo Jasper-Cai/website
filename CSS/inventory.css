@@ -5,7 +5,7 @@
       .btn-group{margin: auto;}
     /*Section one*/
       .first-heading{position: relative;top:60%;margin:0 5%;color:#FFF}
-      .bg-img{width: 100%;height: 300px;background-image: url('/image/inventory-bg.jpg');background-size: cover;background-position: center bottom;}
+      .bg-img{width: 100%;height: 300px;background-image: url('/image/inventory-bg.jpg');background-size: cover;background-position: center center;}
     /*Section two*/
       .my-dropdown{display:inline-block;padding:5px;}
       .sort-by{text-align:center;line-height:50px;padding:5px;}
@@ -14,8 +14,8 @@
       .margin-bottom-20{margin-bottom:20px;}
       .title{font-size:20px;}
       .checkbox{position:absolute;top:3px;right:5px}
-      .vehicle-detail{font-weight:bold;}
-      .spec{padding-left:5px;}
+      .vehicle-detail{font-weight:bold;width:100px;text-align:left}
+      .spec{padding-left:5px;text-align:left}
       .btn-details{display:flex;float:right;}
       /*Section Nine*/
         .contact{padding:20px 2%;background-color:#333;opacity:0.9;color:#fff}
