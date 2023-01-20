@@ -27,8 +27,8 @@ function render_threeImage(threeImages){
     for(let i = 0; i < threeImages.length; i++){
         outHtml += `
         <div class="column col-sm-12 col-md-12 col-lg-4 manager-infor">
-            <div class="manager-img">
-            <img src="${threeImages[i].imageUrl}" alt="图片错误" height="280">
+            <div>
+                <img src="${threeImages[i].imageUrl}" alt="图片错误" height="280">
                 <div>
                     <h4><strong>${threeImages[i].name}</strong></h4>
                     <p>${threeImages[i].position}</p>
@@ -71,8 +71,8 @@ function render_fourImage(fourImages){
     for(let i = 0; i < fourImages.length; i++){
         outHtml += `
         <div class="column col-sm-12 col-md-6 col-lg-3 col-xl-3 sales-infor">
-            <div class="sales-infor-img">
-                <img src="${fourImages[i].imageUrl}" alt="图片错误" height="300">
+            <div>
+                <img src="${fourImages[i].imageUrl}" alt="图片错误" height="250px">
                 <div>
                     <h4><strong>${fourImages[i].name}</strong></h4>
                     <p>${fourImages[i].position}</p>
