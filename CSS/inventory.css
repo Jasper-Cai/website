@@ -2,6 +2,7 @@
     /*Heading*/
       .header{position:fixed;top:0px;left:0px;width:100%;min-height:50px;background-color:#000;opacity:0.7;padding:20px;z-index:100;}
       .bottom-header{position:fixed;top:0px;left:0px;width:100%;min-height:50px;margin-top:70px;z-index:100;}
+      .heading-text-color{color:#fff}
       .btn-group{margin: auto;}
     /*Section one*/
       .first-heading{position: relative;top:60%;margin:0 5%;color:#FFF}
