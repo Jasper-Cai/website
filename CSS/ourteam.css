@@ -1,8 +1,8 @@
       section{margin:50px 0;}
       .email{color:#f00}
       /*Heading*/
-        .header{position:fixed;top:0px;left:0px;width:100%;min-height:50px;background-color:#000;opacity:0.7;padding:20px;}
-        .bottom-header{position:fixed;top:0px;left:0px;width:100%;min-height:50px;margin-top:70px;}
+        .header{position:fixed;top:0px;left:0px;width:100%;min-height:50px;background-color:#000;opacity:0.7;padding:20px;z-index:10;}
+        .bottom-header{position:fixed;top:0px;left:0px;width:100%;min-height:50px;margin-top:70px;z-index:10;}
         .heading-text-color{color:#fff}
         .btn-group{margin: auto;}
       /*Section one*/
@@ -33,7 +33,7 @@
         .map{overflow:hidden;padding-bottom:50%;position:relative;height:0;}
         .map iframe{top:20px;height:100%;width:100%;position:absolute;}
       /*Section Six*/
-        .footer-infor{color:#fff;padding:20px 2%;background-color:#333;opacity:0.9;}
+        .footer-infor{color:#fff;padding:20px 2%;background-color:#333;opacity:0.9;position:relative;z-index:-10;}
         .footer-infor h4{margin:10px 20px;}
         .footer-infor a{color:#999;text-decoration:none;}
         .footer-infor>div{margin:20px 0;}
@@ -41,7 +41,7 @@
         .twitterfeed{padding:5px;line-height:30px;}
         .tweet-text>li{margin:0px 0}
       /*Section Footer*/
-        .footer{background-color:#000;opacity:0.8;color:#fff}
+        .footer{background-color:#000;opacity:0.8;color:#fff;position:relative;z-index:-10;}
         .footer a{color:#fff;text-decoration:none;}
         .footer>div{margin:20px 0;}
         .logo-footer>div{margin:auto 5%;padding:8px;}

@@ -1,11 +1,11 @@
       section{margin:50px 0;}
       /*Heading*/
-        .header{position:fixed;top:0px;left:0px;width:100%;min-height:50px;background-color:#000;opacity:0.7;padding:20px;}
-        .bottom-header{position:fixed;top:0px;left:0px;width:100%;min-height:50px;margin-top:70px;}
+        .header{position:fixed;top:0px;left:0px;width:100%;min-height:50px;background-color:#000;opacity:0.7;padding:20px;z-index:10;}
+        .bottom-header{position:fixed;top:0px;left:0px;width:100%;min-height:50px;margin-top:70px;z-index:10;}
         .heading-text-color{color:#fff}
         .btn-group{margin:auto;}
       /*Section one*/
-        .first-heading{position:relative;top:20%;left:5%;width:max-content}
+        .first-heading{position:relative;top:30%;margin:0 5%;width:max-content;color:#fff;}
         .bg-img{width:100%;height:500px;background-image:url('/image/lianxin.png');background-size: cover;background-position: center center;}
       /*Section two*/
         .product_preview{display:flex;width:100%;padding:20px 5%}
@@ -44,7 +44,7 @@
         .icon-group img{max-width:5rem;}
         .icon-group span{color:#fff}
       /*Section Nine*/
-        .contact{padding:20px 2%;background-color:#333;opacity:0.9;color:#fff}
+        .contact{padding:20px 2%;background-color:#333;opacity:0.9;color:#fff;position:relative;z-index:-10;}
         .contact h4{margin-bottom:20px;}
         .contact a{color:#fff;text-decoration:none;}
         .contact>div{margin:10px 0;}
@@ -52,7 +52,7 @@
         .twitter-feed{padding:8px}
         .contact-us{padding:8px;}
       /*Section Footer*/
-        .footer{background-color:#000;opacity:0.8;color:#fff}
+        .footer{background-color:#000;opacity:0.8;color:#fff;position:relative;z-index:-10;}
         .footer a{color:#fff;text-decoration:none;}
         .footer>div{margin:20px 0;}
         .logo-footer>div{margin:auto 5%;padding:8px;}
