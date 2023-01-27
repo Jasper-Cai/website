@@ -1,7 +1,7 @@
       section{margin:50px 0;}
       /*Heading*/
-        .header{position:fixed;top:0px;left:0px;width:100%;min-height:50px;background-color:#000;opacity:0.7;padding:20px;z-index:10;}
-        .bottom-header{position:fixed;top:0px;left:0px;width:100%;min-height:50px;margin-top:70px;z-index:10;}
+        .header{position:fixed;top:0px;left:0px;width:100%;min-height:50px;background-color:#000;opacity:0.7;padding:10px;z-index:10;}
+        .bottom-header{position:fixed;top:0px;left:0px;width:100%;min-height:50px;margin-top:50px;z-index:10;}
         .nav-item{margin:3px;}
         .heading-text-color{color:#fff}
         .btn-group{margin:auto;}
