@@ -10,8 +10,8 @@
         .first-heading{position:relative;top:30%;margin:0 5%;width:max-content;color:#fff;}
         .bg-img{width:100%;height:500px;background-image:url('/image/lianxin.png');background-size: cover;background-position: center center;}
       /*Section two*/
-        .product_preview{display:flex;width:100%;padding:20px 5%}
-        .product_preview>div{flex:1;margin:20px}
+        .product_preview{display:flex;width:100%;padding:2% 5%}
+        .product_preview>div{flex:1;margin:2%}
         .product_preview_item{text-align:center;}
         .product_preview_item h3{margin: 20px 0 10px 0;color: #f00;text-align:center;}
         .product_preview_item p{text-align:center;vertical-align:middle;padding:8px;line-height:30px;}
