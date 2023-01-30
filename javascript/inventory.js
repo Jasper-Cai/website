@@ -60,7 +60,7 @@ function render_inventory(inventories){
                         <div class="title">${inventories[i].title}</div>
                         <div class="checkbox"><input class="form-check-input" type="checkbox"></div>
                     </div>
-                    <div class="margin-bottom-20" style="text-align:center;width:100%;padding:20px"><img src="${inventories[i].carImageUrl}" alt="Porsche" width="100%" height="auto"></div>
+                    <div class="margin-bottom-20" style="text-align:center;width:100%;padding:20px"><img src="${inventories[i].carImageUrl}" alt="图片错误" width="100%" height="auto"></div>
                     <table style="margin-top:20px">
                         <tbody>
                             <tr>

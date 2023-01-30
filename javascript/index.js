@@ -27,12 +27,10 @@ function render_threeImage(threeImages){
     let outHtml = "";
     for(let i = 0; i < threeImages.length; i++){
         outHtml += `
-        <div>
-            <div class="column product_preview_item">
-                <img src="${threeImages[i].imageUrl}" alt="Porsche 918"/>
-                <h3>${threeImages[i].title}</h3>
-                <p>${threeImages[i].describe}</p>
-            </div>
+        <div class="column product_preview_item">
+            <img src="${threeImages[i].imageUrl}" alt="图片错误"/>
+            <h3>${threeImages[i].title}</h3>
+            <p>${threeImages[i].describe}</p>
         </div>
         `;              
     }
