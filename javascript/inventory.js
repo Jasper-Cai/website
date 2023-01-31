@@ -21,18 +21,7 @@ function initial_load() {
     })
 }
 
-function render_inventory(inventories) {
-    let html = ""
-    for (var i = 0; i < inventories.length; i++) {
-        let inventory = inventories[i]
-        html += `<div>
-                    <h3>${inventory.title}</h3>
-                    <p>${inventory.description}</p>
-                    <button class="btn btn-primary" onclick="open_video(${inventory.id})">View Video</button>
-                </div>`
-    }
-    return html
-}
+
 
 function open_video(inventoryId) {
     var foundInventory = null
@@ -45,7 +34,32 @@ function open_video(inventoryId) {
     }
     if (foundInventory != null) {
         document.querySelector('.modal-title').innerHTML = foundInventory.title;
-        document.querySelector('.modal-body').innerHTML = foundInventory.description;
+        //document.querySelector('.modal-body').innerHTML = foundInventory.price + foundInventory.pc;
+        $("#exampleModal").modal("toggle");
+    }
+}
+
+function view_details(inventoryId) {
+    var foundInventory = null
+    var inventories = inventorySectionThree
+    for (var i = 0; i < inventories.length; i++){
+        let inventory = inventories[i]
+        if (inventory.id == inventoryId) {
+            foundInventory = inventory
+        }
+    }
+    if (foundInventory != null) {
+        document.querySelector('.modal-title').innerHTML = foundInventory.title;
+        document.querySelector('.modal-body').innerHTML = `
+        <ul>
+            <li>${foundInventory.rearAxle}: ${foundInventory.rac}</li>
+            <li>${foundInventory.wheelBase}: ${foundInventory.wbc}</li>
+            <li>${foundInventory.drivetrain}: ${foundInventory.dc}</li>
+            <li>${foundInventory.engine}: ${foundInventory.ec}</li>
+            <li>${foundInventory.price}: ${foundInventory.pc}</li>
+            <li>${foundInventory.engine}: ${foundInventory.ec}</li>
+        </ul>
+`;
         $("#exampleModal").modal("toggle");
     }
 }
@@ -99,7 +113,7 @@ function render_inventory(inventories){
                         </div>
                     </div>
                     <button onclick="open_video('${inventories[i].id}')" type="button" class="btn btn-sm btn-outline-secondary">${inventories[i].cardBtnLeft}</button>
-                    <button type="button" class="btn btn-sm btn-outline-secondary btn-details">${inventories[i].cardBtnRight}</button>
+                    <button onclick="view_details('${inventories[i].id}')" type="button" class="btn btn-sm btn-outline-secondary btn-details">${inventories[i].cardBtnRight}</button>
                 </div>
             </div>
         `;  
