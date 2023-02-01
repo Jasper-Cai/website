@@ -8,7 +8,7 @@
     <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="CSS/index.css?v=7">
+    <link rel="stylesheet" href="CSS/index.css?v=10">
     <script src="/javascript/index.js?v=1"></script>
     <title>Document</title>
 
@@ -70,7 +70,7 @@
         <div class="container-fluid" style="background-color:#e0e0e0;padding:20px;">
           <div class="row" style="margin:20px auto;">
             <h2 class="col-lg-9 col-md-8 col-sm-8">买国六 选欧曼 <span>!</span> <em>最节油</em>  国六重卡 </h2> 
-            <div class="col-lg-3 col-md-4 col-sm-4 "><button type="button" class="btn btn-danger">Schedule a Test Driver</button></div>
+            <div class="col-lg-3 col-md-4 col-sm-4 "><button type="button" class="btn btn-danger btn-lg" data-toggle="modal" data-target="#scheduleTestDrive">预约试乘试驾</button></div>
           </div>
         </div>
     </section>
@@ -410,6 +410,67 @@
         </div>
       </div>
     </section>
+
+    /*Schedule Test Drive button modal*/
+    <div class="modal fade" id="scheduleTestDrive" tabindex="-1" role="dialog" aria-labelledby="scheduleTestDrive" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="scheduleTestDrive">预约试乘试驾</h5>
+            <button type="button" class="btn btn-light" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+
+            <form>
+              <table class="form-table">
+                <tr class="form-row">
+                  <td class="form-label">
+                    <label for="name">姓名:</label>
+                  </td>
+                  <td class="form-input">
+                    <input type="text" class="form-control">
+                  </td>
+                </tr>
+                <tr class="form-row">
+                  <td class="form-label">
+                    <label for="phone">电话:</label>
+                  </td>
+                  <td class="form-input">
+                    <input type="tel" class="form-control">
+                  </td>
+                </tr>
+                <tr class="form-row">
+                  <td class="form-label">
+                    <label for="carType">车型:</label>
+                  </td>
+                  <td class="form-input">
+                    <input type="text" class="form-control">
+                  </td>
+                </tr>
+                <tr class="form-row">
+                  <td class="form-label">
+                    <label for="time">预约时间:</label>
+                  </td>
+                  <td class="form-input">
+                    <input type="datetime-local" class="form-control">
+                  </td>
+                </tr>
+              </table>
+              <div class="form-group form-check mt-3">
+                  <input class="form-check-input" type="checkbox">
+                  <label class="form-check-label" for="agreement">您同意上传这张表格并发送个人信息给我们</label>
+                </div>
+            </form>
+
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary">立即提交</button>
+          </div>
+        </div>
+      </div>
+    </div>
 
   </body>
 </html>
