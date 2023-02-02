@@ -30,22 +30,18 @@
         .btn-inventory-container{display:flex;flex-direction:row;}
         .btn-search-inventory{margin-left:auto;margin-right:5px;;}
       /*Section Five*/
-        .recent-vehicles{text-align:center;}
-        .recent-vehicles-infor{margin:10px auto;}
-        .recent-vehicles-item>img{width:100%;max-width:167px;min-width:110px;}
-      /*Section Six*/
         .map{overflow:hidden;padding-bottom:50%;position:relative;height:0;}
         .map iframe{top:20px;height:100%;width:100%;position:absolute;}
-      /*Section Seven*/
+      /*Section Six*/
         .service-item{margin:10px auto 10px auto;}
         .service-item img{height:100px}
         .service-item-timetable{margin:auto;max-width:500px;}
-      /*Section Eight*/
+      /*Section Seven*/
         .bottom-bg-img{background-image:url('/image/publicity-img.jpg');background-position: center center;background-size:cover;height:auto;width:100%;padding:80px;}
         .icon-group{text-align:center;vertical-align:middle;}
         .icon-group img{max-width:5rem;}
         .icon-group span{color:#fff}
-      /*Section Nine*/
+      /*Section Eight*/
         .contact{padding:20px 2%;background-color:#333;opacity:0.9;color:#fff;position:relative;z-index:-10;}
         .contact h4{margin-bottom:20px;}
         .contact a{color:#fff;text-decoration:none;}

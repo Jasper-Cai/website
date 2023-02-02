@@ -4,7 +4,6 @@ function fuc_load() {
     initial_load()
     second_load()
     third_load()
-    forth_load()
 }
 
 function initial_load() {
@@ -69,74 +68,6 @@ function render_middleFeature(middleFeatures){
 
 
 function third_load() {
-    var indexSectionFive = [
-        {
-            "imageUrl" :"https://demo.themesuite.com/automotive-wp/wp-content/uploads/2014/10/28-touring-1-167x119.jpg",
-            "title":"2013 BMW 328i Touring Edition",
-            "describe":"No owners, Brand new.",
-            "describe2":"No owners, Brand new.",
-            "price":"$55,000"
-        },
-        {
-            "imageUrl" :"https://demo.themesuite.com/automotive-wp/wp-content/uploads/2014/10/28-touring-1-167x119.jpg",
-            "title":"2013 BMW 328i Touring Edition",
-            "describe": "No owners, Brand new.",
-            "price":"$55,000"
-        },
-        {
-            "imageUrl" :"https://demo.themesuite.com/automotive-wp/wp-content/uploads/2014/10/28-touring-1-167x119.jpg",
-            "title":"2013 BMW 328i Touring Edition",
-            "describe": "No owners, Brand new.",
-            "price":"$55,000"
-        },
-        {
-            "imageUrl" :"https://demo.themesuite.com/automotive-wp/wp-content/uploads/2014/10/28-touring-1-167x119.jpg",
-            "title":"2013 BMW 328i Touring Edition",
-            "describe": "No owners, Brand new.",
-            "price":"$55,000"
-        },
-        {
-            "imageUrl" :"https://demo.themesuite.com/automotive-wp/wp-content/uploads/2014/10/28-touring-1-167x119.jpg",
-            "title":"2013 BMW 328i Touring Edition",
-            "describe": "No owners, Brand new.",
-            "price":"$55,000"
-        }
-    ]
-    let html = render_middleFiveImage(indexSectionFive)
-    document.getElementById("home_middle_fiveImage").innerHTML = html;
-    
-}
-function render_middleFiveImage(middleFiveImages){
-    let outHtml="";
-    outHtml += ' <div class="col-lg-2 col-md-2 col-sm-4">';
-    outHtml += ' <h5 style="color:#F00;">Recent Vehicles</h5>';
-    outHtml += ' <p>Browse through the vast selection of vehicles that have recently been added to our inventory.</p>';
-    outHtml += ' </div>';
-    outHtml += ' <div class="col-lg-10 col-md-10 col-sm-8 recent-vehicles">';
-    outHtml += ' <div class="row">';
-    for(let i = 0;i < middleFiveImages.length; i++){
-        outHtml += `
-            <div class="col-lg-2 col-md-2 col-sm-8 recent-vehicles-infor">
-                <a href="">
-                    <div class="recent-vehicles-item">
-                        <img src="${middleFiveImages[i].imageUrl}" alt="BMW">
-                        <div style="background-color:#eee">
-                            <div><strong>${middleFiveImages[i].title}</strong></div>
-                            <div>${middleFiveImages[i].describe}</div>
-                                <span>${middleFiveImages[i].price}</span>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            `;
-    }
-    outHtml += '</div>';
-    outHtml += '</div>';
-    return outHtml;
-}
-
-
-function forth_load() {
     var indexSectionEight = []
     let html = render_bottomFeature(indexSectionEight)
     document.getElementById("home_bottom_feature").innerHTML = html;
