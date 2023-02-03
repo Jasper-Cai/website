@@ -9,7 +9,7 @@
     <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="CSS/ourteam.css?v=6">
+    <link rel="stylesheet" href="CSS/ourteam.css?v=9">
     <script src="/javascript/ourteam.js?v=4"></script>
   </head>
   <body onload="fuc_load()">
@@ -59,7 +59,6 @@
           <div class="first-heading">
             <h2>我们的团队</h2>
             <h4 style="display:inline-block">将竭诚为您服务</h4>
-            <span style="float:right;">Home / Our Team</span>
           </div>
       </div>
     </section>
@@ -85,100 +84,65 @@
     <section>
       <div class="container-fluid" style="padding:0 5%">
         <div>
-          <div><h4><span style="color: #f00;"><strong>搜索</strong></span> 我们的车型</h4>
+          <div>
+            <div class="inventory-sec-heading">
+              <h4><span><strong>搜索</strong></span> 我们的车型</h4>
+            </div>
+
             <div style="background-color:#e0e0e0;padding:2%;">
               <form>
                 <div>
                   <div class="row inventory">
+                    <div class="form-group form-inline col-12">
+                      <div class="form-group col-auto inventory-col">
+                        <select class="form-select">
+                          <option selected>请选择车型</option>
+                          <option>自卸车</option>
+                          <option>载货车</option>
+                          <option>牵引车</option>
+                          <option>专用车</option>
+                        </select>
+                      </div>
+                      <div class="form-group col-auto inventory-col">
+                        <select class="form-select">
+                          <option selected>请选择车系</option>
+                          <option>欧曼 EST</option>
+                          <option>欧曼 EXT</option>
+                          <option>欧曼 GTL</option>
+                          <option>欧曼 LNG</option>
+                          <option>欧曼行星</option>
+                          <option>欧曼银河</option>
+                          <option>欧曼轿运</option>
+                        </select>
+                      </div>
+
+                    </div>
                     <div class="form-group form-inline col-6">
                       <div class="form-group col-auto inventory-col">
                         <select class="form-select">
-                          <option selected>Make</option>
-                          <option>Audi</option>
-                          <option>BMW</option>
-                        </select>
-                      </div>
-
-                      <div class="form-group col-auto inventory-col">
-                        <select class="form-select">
-                          <option selected>Model</option>
-                          <option>RS7</option>
-                          <option>X6M</option>
-                        </select>
-                      </div>
-
-                      <div class="form-group col-auto inventory-col"><select class="form-select">
-                        <option selected>Body Style</option>
-                        <option>Sedan</option>
-                        <option>SUV</option>
+                          <option selected>请选择配置</option>
+                          <option>平顶型</option>
+                          <option>高顶型</option>
                         </select>
                       </div>
                     </div>
 
                     <div class="form-group col-6">
-                      <div class="row inventory-col">
-                        <div class="form-group col-5">
-                          <select class="form-select">
-                            <option selected>Min Year</option>
-                            <option>2000</option>
-                            <option>2001</option>
-                          </select>
-                        </div>
-                        <div class="col-2" style="margin:auto"><span>to</span>
-                        </div>
-                        <div class="form-group col-5">
-                        <select class="form-select">
-                          <option selected>Max Year</option>
-                          <option>2020</option>
-                          <option>2021/option>
-                        </select>
-                        </div>
-                      </div>
-
-                      <div class="row inventory-col">
-                        <div class="form-group col-5">
-                          <select class="form-select">
-                            <option selected>Min Price</option>
-                            <option>50000</option>
-                            <option>100000</option>
-                          </select></div>  
-                        <div class="col-2"><span>to</span>
-                        </div>
-                        <div class="form-group col-5">
-                          <select class="form-select">
-                            <option selected>Max Price</option>
-                            <option>150000</option>
-                            <option>200000</option>
-                          </select>
-                        </div>
-                      </div>
-
                       <div class="form-group col-auto inventory-col">
-                        <input class="form-control" type="text" placeholder="Refine with keywords">
+                        <input class="form-control" type="text" placeholder="输入关键词">
                       </div>
-                    </div>
-                  </div>
-
-                  <div class="inventory">
-                    <div class="form-check form-check-inline">
-                      <input class="form-check-input" type="checkbox" value="option1"><label>Certified</label>
-                    </div>
-                    <div class="form-check form-check-inline">
-                      <input class="form-check-input" type="checkbox" value="option2"><label>CARFAX Verfied</label>
-                    </div>
-                    <div class="form-check form-check-inline">
-                      <input class="form-check-input"  type="checkbox" value="option3"><label>Brand New</label>
                     </div>
                   </div>
 
                   <div class="inventory btn-inventory-container">
-                    <button type="button" class="btn btn-danger btn-search-inventory">Reset</button>
-                    <button type="button" class="btn btn-danger">Find My New New Vehicle</button>
+                    <button type="button" class="btn btn-danger btn-search-inventory">重置</button>
+                    <button type="button" class="btn btn-danger">搜索车辆</button>
                   </div>
 
                 </div>
               </form>
             </div>
+
           </div>
         </div>
       </div>
@@ -195,53 +159,19 @@
 
     <section style="margin:0px;">
       <div class="container-fluid">
-        <div class="row footer-infor">
+        <div class="row contact">
+
           <div class="col-lg-6 col-md-6 col-sm-12">
-            <h4>Things to Consider</h4>
-            <div class="considerations">
-              <ul>
-                <li>Fully responsive and ready for all mobile devices</li>
-                <li>Integrated inventory management system</li>
-                <li>Simple option panel and very easy to customize</li>
-                <li>Search engine optimization (SEO) is 100% built-in</li>
-                <li>Revolution Slider is included for product marketing</li>
-                <li>Tons of shortcodes for quick and easy add-ons</li>
-                <li>Fully backed by our dedicated support team</li>
-              </ul>
+            <div class="wechatQRcode">
+              <img src="/image/wechatQRcode.jpg" alt="wechat QR code" width="150px" height="auto">
+              <div>福田戴姆勒官方微信</div>
             </div>
           </div>
 
           <div class="col-lg-6 col-md-6 col-sm-12">
-            <h4>Twitter Feed</h4>
-            <div class="twitterfeed">
-              <ul class="tweet-text">
-                <li> 
-                  <span>Check out our latest theme release 'Landscaping' - 
-                    <a href="">themeforest.net/item/landscapi…</a>
-                  </span>
-                </li>
-                <li> 
-                  <span>
-                    <span>@</span>
-                    <a href="">MrSamHughes</a> 
-                    Probably the easiest way is to send an email to sales@themesuite.com, or through our ThemeForest profi… <a href="">twitter.com/i/web/status/8…</a>
-                  </span>
-                </li>
-                <li> 
-                  <span>
-                    Spring is coming!  Check out our new Landscaping HTML Template, WordPress to be released shortly! 
-                    <a href="">themeforest.net/item/landscapi…</a>
-                  </span>
-                </li>
-                <li> 
-                  <span>
-                    Congrats @
-                    <a href="">diadea3007</a> on being 2017 @
-                    <a href="">Envato</a> People to Watch, very well deserved indeed 
-                    <a href="">envato.com/blog/36-creati…</a>
-                  </span>
-                </li>
-              </ul>
+            <div class="weiboQRcode">
+              <img src="/image/weiboQRcode.jpg" alt="weibo QR code" width="150px" height="auto">
+              <div>福田戴姆勒官方微博</div>
             </div>
           </div>
 
@@ -251,18 +181,20 @@
 
     <section style="margin:0px;">
       <div class="container-fluid">
-        <div class="row footer">
-          <div class="col-lg-4 col-md-4 col-sm-4 logo-footer">
+        <div class="row footer" style="display:flex;align-items:center;">
+          <div class="col-lg-6 col-md-6 col-sm-12 logo-footer">
             <div>
-              <a href="index.html" style="display:flex;align-items:center;">
+              <div>
+                <a href="index.html" style="display:flex;">
                 <img src="/image/FOTON-sign.png" alt="FOTON" height="50px" width="auto">
                 <div style="display:flex;flex-direction:column;margin-left:10px;">
                   <span class="footer-logo-text"><em><strong><span style="font-size:1.5rem">F</span>OTON<span style="font-size:1.5rem">D</span>AIMLER</strong></em></span>
                   <span class="footer-logo-text">福田戴姆勒汽车</span>
                 </div>
               </a>
+              </div>
             </div>
-            <div >
+            <div> 
               <p> 
                 Powered by <a href="">WordPress</a>. 
                 Built with <a href="">Automotive</a>.
@@ -270,14 +202,17 @@
             </div>
           </div>
 
-          <div class="col-lg-8 col-md-8 col-sm-8">
+          <div class="col-lg-6 col-md-6 col-sm-12">
             <div class="col-lg-12">
-              <ul>
-                <li class="menu-item"><a href="index.html">首页</a></li>
-                <li class="menu-item"><a href="inventory.html">车型</a></li>
-                <li class="menu-item"><a href="service.html">客户服务</a></li>
-                <li class="menu-item"><a href="ourteam.html">联系我们</a></li>
-              </ul>
+              <div class="footer-navbar">
+                <ul>
+                  <li class="menu-item"><a href="index.html">首页</a></li>
+                  <li class="menu-item"><a href="inventory.html">车型</a></li>
+                  <li class="menu-item"><a href="service.html">客户服务</a></li>
+                  <li class="menu-item"><a href="ourteam.html">联系我们</a></li>
+                </ul>
+              </div>
+              <div class="footer-text"><p>24小时客户服务热线: 400-8900-977</p></div>
             </div>
           </div>
           

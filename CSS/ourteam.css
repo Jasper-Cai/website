@@ -27,25 +27,34 @@
         .sales-infor{padding:0 5px;text-align:center;}
         .sales-infor img{width:auto;max-width:200px;}
       /*Section Four*/
+        .inventory-sec-heading{margin-bottom:40px;}
+        .inventory-sec-heading span{font-weight:800;color:#f00}
         .inventory{padding:8px;}
         .inventory-col{padding:4px;}
         .btn-inventory-container{display:flex;flex-direction:row;}
-        .btn-search-inventory{margin-left:auto;margin-right:5px;}
+        .btn-search-inventory{margin-left:auto;margin-right:5px;;}
       /*Section Five*/
         .map{overflow:hidden;padding-bottom:50%;position:relative;height:0;}
         .map iframe{top:20px;height:100%;width:100%;position:absolute;}
       /*Section Six*/
-        .footer-infor{color:#fff;padding:20px 2%;background-color:#333;opacity:0.9;position:relative;z-index:-10;}
-        .footer-infor h4{margin:10px 20px;}
-        .footer-infor a{color:#999;text-decoration:none;}
-        .footer-infor>div{margin:20px 0;}
+        .contact{color:#fff;padding:20px 2%;background-color:#333;opacity:0.9;position:relative;z-index:-10;}
+        .contact>div{margin:20px 0;}
+        .wechatQRcode{padding:8px;text-align:center;}
+        .wechatQRcode>img{border:3px solid #fff;padding:8px;}
+        .wechatQRcode>div{margin-top:20px;}
+        .weiboQRcode{padding:8px;text-align:center;}
+        .weiboQRcode>img{border:3px solid #fff;padding:8px;}
+        .weiboQRcode>div{margin-top:20px;}
+        .QRcode-text{padding:8px;text-align:center;}
         .considerations li{padding:5px;line-height:30px;}
         .twitterfeed{padding:5px;line-height:30px;}
         .tweet-text>li{margin:0px 0}
       /*Section Footer*/
-        .footer{background-color:#000;opacity:0.8;color:#fff;position:relative;z-index:-10;}
+        .footer{background-color:#000;opacity:0.8;color:#fff;position:relative;z-index:-10;text-align:center;}
         .footer a{color:#fff;text-decoration:none;}
         .footer>div{margin:20px 0;}
         .logo-footer>div{margin:auto 5%;padding:8px;}
         .footer-logo-text{color:#fff;font-size:1rem;}
-        .menu-item{display:inline-block;;padding:8px}
+        .footer-navbar>ul{padding-left:0px;}
+        .menu-item{display:inline-block;padding:8px}
+        .footer-text>p{margin-left: 0px;}
