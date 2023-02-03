@@ -24,14 +24,20 @@
         .contact{padding:20px 2%;background-color:#333;opacity:0.9;color:#fff;position:relative;z-index:-10;}
         .contact h4{margin-bottom:20px;}
         .contact a{color:#fff;text-decoration:none;}
-        .contact>div{margin:10px 0;}
-        .newsletter{padding:8px}
-        .twitter-feed{padding:8px}
-        .contact-us{padding:8px;}
+        .contact-container{margin:20px 0px;}
+        .appQRcode{padding:8px;text-align:center;}
+        .appQRcode>img{border:3px solid #fff;padding:8px;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);}
+        .QRcode-text{padding:8px;text-align:center;}
+        .QRcode-text>div{margin-top:10px;}
+        .dl-btn{--bs-btn-border-radius:0.9rem;}
+        .contact-infor{padding:8px;text-align:center;}
+        .contact-us{padding:8px;text-align:left;}
       /*Section Footer*/
-        .footer{background-color:#000;opacity:0.8;color:#fff;position:relative;z-index:-10;}
+        .footer{background-color:#000;opacity:0.8;color:#fff;position:relative;z-index:-10;text-align:center;}
         .footer a{color:#fff;text-decoration:none;}
         .footer>div{margin:20px 0;}
         .logo-footer>div{margin:auto 5%;padding:8px;}
         .footer-logo-text{color:#fff;font-size:1rem;}
-        .menu-item{display:inline-block;;padding:8px}
+        .footer-navbar>ul{padding-left:0px;}
+        .menu-item{display:inline-block;padding:8px}
+        .footer-text>p{margin-left: 0px;}
