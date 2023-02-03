@@ -4,7 +4,7 @@
       .header a {text-decoration:none;color:inherit;}
       .bottom-header{position:fixed;top:0px;left:0px;width:100%;min-height:50px;margin-top:50px;z-index:10;}
       .nav-item{margin:3px;}
-      .heading-text-color{color:#fff}
+      .heading-logo-text{color:#fff;font-size:1rem;}
       .btn-group{margin: auto;}
     /*Section one*/
       .first-heading{position:relative;top:60%;margin:0 5%;color:#FFF}
@@ -33,4 +33,5 @@
         .footer a{color:#fff;text-decoration:none;}
         .footer>div{margin:20px 0;}
         .logo-footer>div{margin:auto 5%;padding:8px;}
+        .footer-logo-text{color:#fff;font-size:1rem;}
         .menu-item{display:inline-block;;padding:8px}
