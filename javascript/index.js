@@ -56,7 +56,7 @@ function render_middleFeature(middleFeatures){
         outHtml += `
         <div class="col-lg-3 col-md-6 col-sm-6">
             <div class="feature-item">
-                <img src="${middleFeatures[i].imageUrl}" alt="icon-1"/>
+                <i class="${middleFeatures[i].icon}"></i>
                 <h3>${middleFeatures[i].title}</h3>
                 <p>${middleFeatures[i].describe}</p>
             </div>
@@ -86,9 +86,11 @@ function render_bottomFeature(bottomFeatures){
         outHtml += `
             <div class="col-lg-3 col-md-6 col-sm-6">
                 <div>
-                    <img src="${bottomFeatures[i].imageUrl}" alt="icon-1"/>
-                    <span><h2>${bottomFeatures[i].number}</h2>
-                    <p>${bottomFeatures[i].describe}</p></span>
+                    <i class="${bottomFeatures[i].icon}" style="color:#DCDCDC;"></i>
+                    <span>
+                        <h2>${bottomFeatures[i].number}</h2>
+                        <p>${bottomFeatures[i].describe}</p>
+                    </span>
                 </div>
             </div>
             `;

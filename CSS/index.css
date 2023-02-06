@@ -34,13 +34,12 @@
         .map iframe{top:20px;height:100%;width:100%;position:absolute;}
       /*Section Six*/
         .service-item{margin:10px auto 10px auto;}
-        .service-item img{height:100px}
+        .service-item i{margin-top:10px;}
         .service-item-timetable{margin:auto;max-width:500px;}
       /*Section Seven*/
         .bottom-bg-img{background-image:url('/image/publicity-img.jpg');background-position: center center;background-size:cover;height:auto;width:100%;padding:80px;}
         .icon-group{text-align:center;vertical-align:middle;}
-        .icon-group img{max-width:5rem;}
-        .icon-group span{color:#fff}
+        .icon-group span{color:#fff;}
       /*Section Eight*/
         .contact{padding:20px 2%;background-color:#333;opacity:0.9;color:#fff;position:relative;z-index:-10;}
         .contact h4{margin-bottom:20px;}
@@ -61,7 +60,8 @@
         .footer-logo-text{color:#fff;font-size:1rem;}
         .footer-navbar>ul{padding-left:0px;}
         .menu-item{display:inline-block;padding:8px}
-        .footer-text>p{margin-left: 0px;}
+        .footer-text{display:flex;flex-direction:row;align-items:center;justify-content:center;}
+        .footer-text p{margin-left:5px;margin-bottom:0px;}
       /* Schedule a Test Drive*/
         .form-table {width:100%;}
         .form-label {width:30%;text-align:left;padding-right:10px;}

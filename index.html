@@ -8,10 +8,11 @@
     <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="CSS/index.css?v=21">
-    <script src="/javascript/index.js?v=2"></script>
+    <script src="https://kit.fontawesome.com/8c0146e67e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="CSS/index.css?v=24">
+    <script src="/javascript/index.js?v=6"></script>
     <title>Document</title>
-
+ 
   </head>
   <body onload="fuc_load()">
 
@@ -175,13 +176,13 @@
         <div class="col-lg-2 col-md-6 col-sm-12 service-item">
           <div>
             <h5>金融服务</h5>
-            <img src="icon-1.PNG" alt="icon-1">
+            <i class="fa-solid fa-coins fa-6x"></i>
           </div>
         </div>
         <div class="col-lg-2 col-md-6 col-sm-12 service-item">
           <div>
             <h5>保修服务</h5>
-            <img src="icon-2.PNG" alt="icon-2">
+            <i class="fa-solid fa-gears fa-6x"></i>
           </div>
         </div>
 
@@ -232,12 +233,12 @@
         <div class="col-lg-2 col-md-6 col-sm-12 service-item">
           <div>
             <h5>关于我们</h5>
-            <img src="icon-3.PNG" alt="icon-3">
+            <i class="fa-solid fa-users fa-6x"></i>
           </div>
         </div>
         <div class="col-lg-2 col-md-6 col-sm-12 service-item">
           <div><h5>找到我们</h5>
-            <img src="icon-4.PNG" alt="icon-4">
+            <i class="fa-solid fa-location-dot fa-6x"></i>
           </div>
         </div> 
       </div>
@@ -265,7 +266,9 @@
             <div class="QRcode-text">
               <h4>福田e家</h4>
               <span>为福田车主提供一站式服务</span>
-              <div><button class="btn btn-primary dl-btn" type="button">扫码下载</button></div>
+              <div>
+                <button class="btn btn-primary dl-btn" type="button"><i class="fa-sharp fa-solid fa-qrcode"></i> 扫码下载</button>
+              </div>
             </div>
           </div>
 
@@ -287,17 +290,17 @@
 
     <section style="margin:0px;">
       <div class="container-fluid">
-        <div class="row footer" style="display:flex;align-items:center;">
+        <div class="row footer">
           <div class="col-lg-6 col-md-6 col-sm-12 logo-footer">
             <div>
               <div>
                 <a href="index.html" style="display:flex;">
-                <img src="/image/FOTON-sign.png" alt="FOTON" height="50px" width="auto">
-                <div style="display:flex;flex-direction:column;margin-left:10px;">
-                  <span class="footer-logo-text"><em><strong><span style="font-size:1.5rem">F</span>OTON<span style="font-size:1.5rem">D</span>AIMLER</strong></em></span>
-                  <span class="footer-logo-text">福田戴姆勒汽车</span>
-                </div>
-              </a>
+                  <img src="/image/FOTON-sign.png" alt="FOTON" height="50px" width="auto">
+                  <div style="display:flex;flex-direction:column;margin-left:10px;">
+                    <span class="footer-logo-text"><em><strong><span style="font-size:1.5rem">F</span>OTON<span style="font-size:1.5rem">D</span>AIMLER</strong></em></span>
+                    <span class="footer-logo-text">福田戴姆勒汽车</span>
+                  </div>
+                </a>
               </div>
             </div>
             <div> 
@@ -318,7 +321,10 @@
                   <li class="menu-item"><a href="ourteam.html">联系我们</a></li>
                 </ul>
               </div>
-              <div class="footer-text"><p>24小时客户服务热线: 400-8900-977</p></div>
+              <div class="footer-text">
+                <i class="fa-solid fa-phone"></i>
+                <p>24小时客户服务热线: <a href="tel:400-8900-977">400-8900-977</a></p>
+              </div>
             </div>
           </div>
           

@@ -1,21 +1,21 @@
   [
         {
-          "imageUrl": "icon-1.PNG",
+          "icon": "fa-solid fa-shield-halved fa-4x",
           "number": "超长质保",
           "describe": "5年保修"
         },
         {
-          "imageUrl": "icon-2.PNG",
+          "icon": "fa-solid fa-gear fa-4x",
           "number": "首保免费",
           "describe": "首保费用全免"
         },
         {
-          "imageUrl": "icon-3.PNG",
+          "icon": "fa-solid fa-truck-fast fa-4x",
           "number": "不限故障外出",
           "describe": "发动机保修内故障：免费救援"
         },
         {
-          "imageUrl": "icon-4.PNG",
+          "icon": "fa-solid fa-hand-point-up fa-4x",
           "number": "'321'闪修承诺",
           "describe": "一般故障1分钟响应, 2小时到达, 3小时解决"
         }
